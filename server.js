@@ -22,12 +22,12 @@ app.use(express.static('public'));
 
 // ✅ PostgreSQL setup
 const db = new pg.Client({
-  user: process.env.USER,
-  host: process.env.HOST,
-  database: process.env.DATABASE,
-  password: process.env.PASSWORD,
-  port: parseInt(process.env.DB_PORT, 10) || 5432, // avoid collision with app port
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
+
 
 db.connect().catch(err => {
   console.error('❌ Failed to connect to the database:', err.stack);
