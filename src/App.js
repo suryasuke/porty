@@ -22,7 +22,7 @@ function App() {
   });
   const [currentPath , setpath]=  useState (''); 
   const [notes, setNotes] = useState([]);
-  const API_URL = "http://localhost:3000/content";
+  const API_URL = "https://porty-production-c79f.up.railway.app/content";
 
 
 
