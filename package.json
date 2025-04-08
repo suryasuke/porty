@@ -41,12 +41,12 @@
     "web-vitals": "^2.1.4"
   },
   
-  "scripts": {
-  "start": "react-scripts start",
-  "build": "NODE_OPTIONS=--max_old_space_size=2048 react-scripts build",
+ "scripts": {
+  "start": "NODE_OPTIONS=--max-old-space-size=2048 react-scripts start",
+  "build": "NODE_OPTIONS=--max-old-space-size=2048 react-scripts build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
-},
+ },
   "eslintConfig": {
     "extends": [
       "react-app",
