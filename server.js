@@ -33,7 +33,9 @@ db.connect().catch(err => {
   console.error('❌ Failed to connect to the database:', err.stack);
 });
 
-console.log(db.name);
+const result = await db.query("SELECT current_database()");
+console.log("✅ Connected to DB:", result.rows[0].current_database);
+
 // ✅ GET request for feedback
 app.get('/content', async (req, res) => {
   try {
