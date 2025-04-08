@@ -33,6 +33,7 @@ db.connect().catch(err => {
   console.error('❌ Failed to connect to the database:', err.stack);
 });
 
+console.log(db.name);
 // ✅ GET request for feedback
 app.get('/content', async (req, res) => {
   try {
