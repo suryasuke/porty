@@ -1,0 +1,248 @@
+.login-container{
+    width: 380px;
+    height: 60px;
+    max-height: 570px;
+    background-color: white ;
+    border: 2px solid  rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    color:   rgb(233, 95, 53);
+    padding: 30px ;
+    padding-top: 2px;
+    position: relative;
+   border-radius: 20px;
+   margin-bottom: 80px;
+   margin-top: 60px;
+   margin-right: 45px;
+   transition: 1s;
+  
+}
+#thank{
+    width: 440px;
+    height: 50px;
+    background-color: #e95f35;
+    color: white;
+    border: none;
+    border-radius:6px ;
+    text-align: center;
+ padding-bottom: 5px;
+    display: flex;
+    justify-content: center ;
+align-items: center;
+position: absolute;
+top: 40px;
+left: 36%;
+}
+
+.title-contains{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+   margin-top: 0;
+}
+ .draged{
+    height: 380px;
+    transition: height 155ms ease;
+}
+.login-container h1{
+    margin-top: px;
+}
+select{
+
+    width: 345px;
+    height: 37px;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid rgb(233, 95, 53);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+   
+}
+.scroll-to-top-btn{
+background-color: rgb(233, 95, 53);
+color: white;
+border: none;
+border-radius: 50%;
+position: relative;
+left: 120px;
+height: 34px;
+width: 35px;
+}
+select:focus {
+    border-color: rgb(233, 95, 53);
+    outline: none;
+  }
+  
+  /* Custom styling for the <select> element on focus */
+  select:focus option {
+    background-color: #f1f1f1;
+  }
+.whole-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#no-feed {
+color: white;
+margin-left: 396px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 10px;
+    
+}
+.forms .input1{
+    width: 345px;
+    height: 37px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(233, 95, 53);
+    
+    color: rgb(0, 0, 0);
+   
+}
+.forms .input1:focus::placeholder{
+    outline: none;
+    color: transparent;
+}
+.forms .input1:focus{
+    outline: none;
+}
+.forms .input1::placeholder{
+    color: rgb(0, 0, 0);
+}
+.btn{
+    width: 345px;
+    height: 42px;
+    background-color:  rgb(233, 95, 53);
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 80px;
+    border: none;
+}
+.btn:hover{
+    border: 1px solid #e95f35;
+    color:  rgb(233, 95, 53);
+    background-color: transparent;
+}
+.texty{
+    width: 345px;
+    height: 80px;position: relative;
+   
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(233, 95, 53);
+    border-radius: 0px;
+    color: rgb(0, 0, 0);
+    
+    outline: none;
+}
+.feedbacks h2{
+background-color:rgb(233, 95, 53);
+width: 30px;
+height: 30px;
+color: white;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+margin-top: 18px;
+}
+.feedbacks h2{
+    color: white;
+}
+textarea::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+textarea:focus::placeholder{
+    color: transparent;
+}
+.icons-like{
+    float: right;
+    position: static;
+margin: 0;
+
+}
+.icons-like .counts{
+    margin-left: 8px;
+    font-size: 13px;
+    color: red;
+   
+}
+.counts{
+    color: red;
+}
+.feedbacks{
+    box-shadow: 0 0 7px  rgb(255, 255, 255); 
+    width: 50%;
+    min-height: 100px;
+    max-height: 800px;
+    background-color:  white;
+    border-radius: 10px;
+    color: rgb(233, 95, 53);
+    margin-top: 30px;
+    padding: 3px 20px 20px 20px;
+    border : 1px solid white ; 
+    word-wrap: break-word; 
+}
+.feedbacks p:nth-child(1){
+    margin-top: 10px;
+}
+.feed-title p{
+    position: relative;
+    top:14px;
+    left: 85%;
+}
+#feedbacks{
+    display: flex;
+    justify-content: center;
+  
+}
+.feedbacks p{
+    color: rgb(0, 0, 0);
+}
+#abso{
+    display: flex;
+    gap: 9px;
+}
+.feed-title p{
+    font-size: 12px;
+    color: red;
+
+    gap: 60px;
+
+}
+.feed-title {
+display: flex;
+}
+
+.names-logo{
+    width: 300px;
+}
+option{
+    background: none;
+    background-color: transparent;
+    color:  rgb(233, 95, 53);
+}
+option:focus{
+    background-color: transparent;
+    color:  rgb(233, 95, 53);
+}
+.feed-tit{
+    color: rgb(255, 255, 255);
+    margin-left: 396px;
+    margin-top: 120px;
+}
+.timestamp{
+    font-size: 12px;
+}

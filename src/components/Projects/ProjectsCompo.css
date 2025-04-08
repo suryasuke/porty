@@ -1,0 +1,67 @@
+.proj-container{
+background-color: white;
+width: 80%;
+height: 180px;
+border-radius: 30px;
+border-top-left-radius: 0px ;
+position: relative;
+top: 10px;
+left: 140px;
+margin-top: 50px;
+margin-bottom: 40px;
+padding: 5px 25px 15px 25px; 
+display: flex;
+flex-direction: column;
+gap: 5px;
+transition: height 0.3s ;
+animation: seeda 1s linear;
+animation-timeline: view();
+animation-range: entry 0  cover 20%;
+}
+
+
+@keyframes seeda {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }   
+}
+
+.active{
+ 
+    height: 320px;
+    transition: height 0.4s linear;
+}
+.title-contain{
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+}
+.title-contain img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 12px;
+    left: 20px; 
+}
+.title-contain h2,p{
+    margin: 5px;
+}
+.view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.view h3{
+    margin-right: 20px;
+    color: rgb(233, 95, 53);
+    width: 40px;
+}
+.read{
+    color: rgb(233, 95, 53);
+    user-select: none;
+}
