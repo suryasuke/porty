@@ -1,11 +1,13 @@
-require('dotenv').config(); // ✅ Best practice: load env first
+import dotenv from 'dotenv';
+dotenv.config();
 
-const pg = require('pg');
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
+import pg from 'pg';
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
 
+const {Client} = pg;
 const app = express();
 const port = process.env.PORT || 3000; // ✅ Dynamic port for Railway/Render/Heroku
 
