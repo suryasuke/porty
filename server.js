@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000; // ✅ Dynamic port for Railway/Render/He
 
 // ✅ Proper CORS config (add your Netlify frontend URL)
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://yourfrontend.netlify.app'], // replace with your Netlify link
+  origin: ['http://localhost:3000', 'https://gleaming-pie-c3c976.netlify.app'], // replace with your Netlify link
   methods: ['GET', 'POST'],
   credentials: true
 }));
