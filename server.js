@@ -9,11 +9,11 @@ import nodemailer from 'nodemailer';
 
 const {Client} = pg;
 const app = express();
-const port = process.env.PORT || 3000; // ✅ Dynamic port for Railway/Render/Heroku
+const port = process.env.PORT || 3000; 
 
-// ✅ Proper CORS config (add your Netlify frontend URL)
+
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://gleaming-pie-c3c976.netlify.app'], // replace with your Netlify link
+  origin: ['http://localhost:3000', 'https://portfolio-surya-devo.netlify.app'], 
   methods: ['GET', 'POST'],
   credentials: true
 }));
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-// ✅ PostgreSQL setup
+
 const db = new pg.Client({
   connectionString: process.env.DATABASE_URL,
   ssl: {
@@ -38,7 +38,7 @@ db.connect().catch(err => {
 const result = await db.query("SELECT current_database()");
 console.log("✅ Connected to DB:", result.rows[0].current_database);
 
-// ✅ GET request for feedback
+
 app.get('/content', async (req, res) => {
   try {
     const result = await db.query("SELECT * FROM details");
@@ -49,7 +49,7 @@ app.get('/content', async (req, res) => {
   }
 });
 
-// ✅ POST request to add feedback
+
 app.post('/content', async (req, res) => {
   const { value, timestamp } = req.body;
 
@@ -61,7 +61,7 @@ app.post('/content', async (req, res) => {
 
     res.json(result.rows[0]);
 
-    // ✅ Send email after inserting
+    
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -104,13 +104,12 @@ app.post('/content', async (req, res) => {
   }
 });
 
-// ✅ Catch-all route for 502 or unknown issues
+
 app.use((err, req, res, next) => {
   console.error('❌ Global error handler:', err.stack);
   res.status(500).json({ message: 'Something went wrong!' });
 });
 
-// ✅ Start server
 app.listen(port, () => {
   console.log(`✅ Server running on port ${port}`);
 });
