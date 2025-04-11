@@ -16,9 +16,9 @@ const hero = () => {
 <div className='names'>
   <h2>Hey Welcome I'm <span>SURYA S</span></h2>
   <p>I'm a Full-Stack Developer specializing in Java and the PERN stack — PostgreSQL, Express.js,<br></br>
-    React, and Node.js. I build scalable, high-performance web applications with a strong focus on clean, <br></br>
-    maintainable code. I'm passionate about solving complex challenges and constantly stay up-to-date with the latest<br></br> 
-    trends in both Java and JavaScript ecosystems.</p>
+    React, and Node.js. I build scalable, high-performance web applications with a strong focus <br></br>
+    on clean, maintainable code. I'm passionate about solving complex challenges and constantly <br></br>
+    stay up-to-date with the latest trends in both Java and JavaScript ecosystems.</p>
   
     
 </div>
