@@ -15,9 +15,11 @@ const hero = () => {
 <div className="hero-left">
 <div className='names'>
   <h2>Hey Welcome I'm <span>SURYA S</span></h2>
-  <p>I'm a MERN stack developer specializing in PostgreSQL, Express.js, React, <br></br>
-    and Node.js.I create scalable, high-performance web apps with a focus on clean code. <br></br> 
-    Passionate about tackling challenges and staying updated with the latest technologies<br></br> my knowledge in full satck</p>
+  <p>I'm a Full-Stack Developer specializing in Java and the PERN stack — PostgreSQL, Express.js,<br></br>
+    React, and Node.js. I build scalable, high-performance web applications with a strong focus on clean, <br></br>
+    maintainable code. I'm passionate about solving complex challenges and constantly stay up-to-date with the latest<br></br> 
+    trends in both Java and JavaScript ecosystems.</p>
+  
     
 </div>
 <div className="hero-latest-btn">
