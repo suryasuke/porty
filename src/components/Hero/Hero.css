@@ -1,74 +1,143 @@
-.hero{
-    background:white;
+.hero {
+    background: white; /* Remove the white background */
     display: flex;
     margin-top: 0;
     box-shadow: 0 0 35px white;
-    
     border-radius: 25px;
     width: 90%;
     height: 400px;
     padding-right: 60px;
-   
-    margin-top: 30px ; 
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
-    
-}
-.whol-contain{
+  }
+  
+  .whole-contain {
     display: flex;
     justify-content: center;
-}
-.hero-left{
+    width: 100%;
+  }
+  
+  .hero-left {
     color: rgb(0, 0, 0);
-    margin-left : 100px;
+    margin-left: 100px;
     margin-top: 10px;
-   
-}
-.names h2{
+  }
+  
+  .names h2 {
     font-size: 45px;
-}
-.names span{
-    color:rgb(233, 95, 53);
-}
-.names img{
+  }
+  
+  .names span {
+    color: rgb(233, 95, 53);
+  }
+  
+  .names img {
     width: 30px;
     height: 30px;
-}
-.hero-left .hero-latest-btn { 
+  }
   
-color: white;
-background-color: #e95f35;
-width: 160px;
-height: 40px;
-border: none;
-border-radius: 7px;
-text-align: center;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-margin-top: 50px;
-padding-top: 14px;
-
-}
-.hero-left .hero-latest-btn:hover a{
-    color:  rgb(233, 95, 53);
-    
-}
-.hero-left .hero-latest-btn a{
+  .hero-left .hero-latest-btn {
+    color: white;
+    background-color: #e95f35;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    padding-top: 14px;
+  }
+  
+  .hero-left .hero-latest-btn:hover a {
+    color: rgb(233, 95, 53);
+  }
+  
+  .hero-left .hero-latest-btn a {
     color: white;
     text-decoration: none;
     cursor: none;
-}
-.hero-left .hero-latest-btn a div:hover{
-    color:  rgb(233, 95, 53);
+  }
+  
+  .hero-left .hero-latest-btn a div:hover {
+    color: rgb(233, 95, 53);
     text-decoration: none;
-}
-.hero-left .hero-latest-btn:hover{
-    border: 1px solid  rgb(233, 95, 53);
-    box-shadow:  0px 0px 5px rgb(233, 95, 53);
+  }
+  
+  .hero-left .hero-latest-btn:hover {
+    border: 1px solid rgb(233, 95, 53);
+    box-shadow: 0px 0px 5px rgb(233, 95, 53);
     background-color: transparent;
     color: rgb(233, 95, 53);
-}
-.hero-right{
-margin-right: 100px;
-}
+  }
+  
+  .hero-right {
+    margin-right: 100px;
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Stacking elements vertically */
+    .hero {
+      flex-direction: column;
+      height: auto; /* Adjust height for mobile */
+      padding: 20px; /* Add padding for mobile */
+      box-shadow: none; /* Remove the box-shadow for mobile */
+    }
+  
+    .hero-left {
+      margin-left: 0;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content on mobile */
+      width: 80%; /* Set the width to 80% on mobile */
+    }
+  
+    .hero-left .hero-latest-btn {
+      width: 100%; /* Full width on mobile */
+      margin-top: 20px;
+    }
+  
+    .names h2 {
+      font-size: 35px; /* Adjust heading size for mobile */
+      text-align: center;
+    }
+  
+    .names p {
+      text-align: center; /* Center paragraph text on mobile */
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    .hero-right {
+      display: none;
+    }
+  
+    /* Avatar should come first on mobile */
+    .avatar {
+      width: 70px; /* Resize avatar for mobile */
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  
+    #imgslogo {
+      width: 140px;
+      height: 80px;
+      margin-left: 10px;
+    }
+  
+    /* Adjust hero-left elements order */
+    .hero-left {
+      order: 1; /* Avatar comes first */
+    }
+  
+    .hero-right {
+      display: none;
+    }
+    /* Additional mobile responsiveness */
+  }
