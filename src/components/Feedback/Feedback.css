@@ -304,6 +304,7 @@ option:focus{
       min-height: 35px;
       max-height: 75px;
       margin: 0 auto;
+        word-wrap: break-word; 
     }
   
     .feedbacks h2 {
