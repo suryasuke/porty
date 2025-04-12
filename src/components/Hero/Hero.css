@@ -108,6 +108,7 @@
     .names p {
       font-size: 16px;
       color: white;
+      text-wrap:wrap;
     }
   
     .names img {
