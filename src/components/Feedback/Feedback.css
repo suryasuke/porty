@@ -419,20 +419,24 @@ color: #ffffff;
         }
       
         .feed-title {
-            margin-top:2px;
+            margin-top:-15px;
             padding-top:3px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          margin-bottom: 2px;
+          margin-bottom: 0px;
+            gap:3px;
         }
       
         #abso {
+            
           display: flex;
           align-items: center;
           gap: 10px;
         }
-      
+       .feed-title P{
+           margin-top:3px;
+       }
         .feed-title h2 {
           width: 35px;
           height: 35px;
