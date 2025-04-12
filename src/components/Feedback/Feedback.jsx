@@ -103,17 +103,7 @@ function Feedback(props) {
     localStorage.setItem('likes' , JSON.stringify(likes));
   }, [count ,likes]);
 
-  useEffect(() => {
-    const handleScroll = () => setwin(window.scrollY > 100); // Set visibility after scrolling 100px down
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  console.log("win" , win)
 
   return (
     <div>
@@ -208,7 +198,7 @@ function Feedback(props) {
         )
        
         }
-         {win && <button onClick={scrollToTop} className="scroll-to-top-btn"><KeyboardArrowUpIcon/></button>}
+      
       </div>
      
     </div>
