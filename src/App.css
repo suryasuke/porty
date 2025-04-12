@@ -87,6 +87,10 @@ overflow-y : hidden;
   .doned{
     opacity: 0.4;
   }
+  .overflow-ah{
+overflow-y : hidden;
+
+}
   
   .alert{
     width: 80%;
