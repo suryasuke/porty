@@ -203,8 +203,9 @@ function Feedback(props) {
         ) : (
           <p id='no-feed'>No feedback yet.</p>
         )}
+        {win && <button onClick={scrollToTop} className="scroll-to-top-btn"><KeyboardArrowUpIcon/></button>}
       </div>
-      {win && <button onClick={scrollToTop} className="scroll-to-top-btn"><KeyboardArrowUpIcon/></button>}
+     
     </div>
   );
 }
