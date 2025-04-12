@@ -429,13 +429,14 @@ color: #ffffff;
         }
       
         #abso {
-            
+            margin-bottom:-10px;
           display: flex;
           align-items: center;
           gap: 10px;
         }
        .feed-title P{
            margin-top:3px;
+           margin-bottom:-2px;
        }
         .feed-title h2 {
           width: 35px;
