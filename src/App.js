@@ -108,7 +108,7 @@ function App() {
   
   return (
     <div className={done ? `overflow-ah` : ''}>
-       <div className={bgda}>
+       <div className={bgda `${done ? `non-intract` : ''}`}>
  <BrowserRouter>
       <Navbar currentPath={currentPath}/>
       <PathCompo onpathChange={setpath}/> 
