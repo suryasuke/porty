@@ -121,6 +121,10 @@
       margin-top: 20px;
       text-align: center;
     }
+      
+    .hero-latest-btn a{
+    margin-top:5px;
+    }
   
     .hero-right {
       display: none;
