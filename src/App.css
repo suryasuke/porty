@@ -79,4 +79,50 @@
 .author{
   margin-top: 10px;
 }
+@media screen and (max-width : 768px){
+  .doned{
+    opacity: 0.4;
+  }
+  
+  .alert{
+    width: 80%;
+    height: 130px;
+    background-color: rgb(149, 35, 0);
+    color: white;
+    border-radius: 12px ;
+    padding: 5px 20px 10px 20px;
+    position: absolute;
+    top: 35%;
+    left: 5.5%;
+  }
+  .alert-conatain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #notice{
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: -20px;
+    
+  }
+  .notice h1{
+font-size: 20px;
+
+  }
+  .contents{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .contents p{
+    font-size: 10px;
+  }
+  #icons{
+    margin-top:10px ;
+  }
+  .author{
+    margin-top: 10px;
+  }
+}
 
