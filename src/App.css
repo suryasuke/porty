@@ -73,6 +73,9 @@
   justify-content: center;
 
 }
+.non-intract{
+  pointer-events: none;
+  }
 #icons{
   margin-top:10px ;
 }
@@ -93,6 +96,9 @@ overflow-y : hidden;
     height:100vh;
 
 }
+  .non-intract{
+  pointer-events: none;
+  }
   
   .alert{
     width: 80%;
