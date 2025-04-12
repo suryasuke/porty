@@ -21,7 +21,7 @@ function Navbar(props) {
       </div>
 
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        ☰
+        {menuOpen ? 'X': '☰' }
       </div>
 
       <ul className={`nav-menu ${menuOpen ? 'mobile' : ''}`}>
