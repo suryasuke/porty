@@ -397,95 +397,34 @@ color: #ffffff;
         max-height: 100%;
     }
     @media screen and (max-width: 768px) {
-  #feedbacks {
-    width: 100%;
-      
-    padding: 10px;
-    box-sizing: border-box;
-  }
-.icons-like{
-    float: right;
-    position: static;
-margin: 0;
-
-}
-.icons-like .counts{
-    margin-left: 8px;
-    font-size: 13px;
-    color: red;
-   
-}
-.counts{
-    color: red;
-}
-        
-  .feedbacks {
-    width: 95%;
-      height:15px;
-    margin: 0 auto 20px auto;
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .feed-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-
-  #abso {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .feed-title h2 {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .feed-title h3 {
-    font-size: 16px;
-    margin: 0;
-    word-break: break-word;
-  }
-
-  .icons-like {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 10px 0;
-  }
-
-  .counts {
-    margin: 0;
-    font-weight: bold;
-  }
-
-  .feedbacks p {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  .timestamp {
-    font-size: 13px;
-    color: #888;
-    margin-top: 10px;
-  }
+ .feedbacks {
+  width: 95%;
+  min-height: 60px;
+  position: relative;
+  margin: 0 auto 20px auto;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-  }
-  
+.icons-like {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.counts {
+  margin: 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: red;
+}
+    }
