@@ -301,13 +301,13 @@ option:focus{
       width: 85%;
       font-size: 16px;
       padding: 15px; 
-      min-height: 30px;
+      min-height: 35px;
       max-height: 65px;
       margin: 0 auto;
     }
   
     .feedbacks h2 {
-      width: 30px;
+      
      
       font-size: 16px;
       display: flex;
@@ -329,9 +329,7 @@ option:focus{
       font-size: 12px;
       text-align: center;
     }
-    .feed-title{
-      
-    }
+  
   
     .names-logo {
       width: 100%;
@@ -434,8 +432,8 @@ color: #ffffff;
   }
 
   .feedbacks .feed-title h2 {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     font-size: 18px;
     background-color: #007bff;
     color: white;
@@ -457,6 +455,15 @@ color: #ffffff;
     align-items: center;
     gap: 10px;
   }
+        .feedbacks #abso h2{
+            margin-top:4px;
+            margin-bottom:9px;
+        }
+        .content{
+            margin-top:10px;
+            text-wrap:wrap;
+        }
+      
 
   .feedbacks .icons-like {
     display: flex;
@@ -478,9 +485,10 @@ color: #ffffff;
   }
 
   .feedbacks .timestamp {
-    font-size: 13px;
+    font-size: 10px;
     color: #888;
-    margin-top: 10px;
+    margin-top: 3px;
+      margin-bottom:5px;
   }
 }
 
