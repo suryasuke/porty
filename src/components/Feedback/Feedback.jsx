@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../Feedback/Feedback.css';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+
 
 function Feedback(props) {
-  const [win , setwin] = useState();
+
   const [drag, setDrag] = useState(false);
   const [submitteds , setsubmit] = useState(false);
   const [likes, setLikes] = useState(()=>{
