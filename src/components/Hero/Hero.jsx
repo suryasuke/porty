@@ -15,11 +15,9 @@ const hero = () => {
 <div className="hero-left">
 <div className='names'>
   <h2>Hey Welcome I'm <span>SURYA S</span></h2>
-  <p>I'm a Full-Stack Developer specializing in Java and the PERN stack — PostgreSQL, Express.js,<br></br>
-    React, and Node.js. I build scalable, high-performance web applications with a strong focus <br></br>
-    on clean, maintainable code. I'm passionate about solving complex challenges and constantly <br></br>
-    stay up-to-date with the latest trends in both Java and JavaScript ecosystems.</p>
-  
+  <p>I'm a MERN stack developer specializing in PostgreSQL, Express.js, React, <br></br>
+    and Node.js.I create scalable, high-performance web apps with a focus on clean code. <br></br> 
+    Passionate about tackling challenges and staying updated with the latest technologies<br></br> my knowledge in full satck</p>
     
 </div>
 <div className="hero-latest-btn">
@@ -30,17 +28,17 @@ const hero = () => {
 
 <div className="hero-right">
 
-
-
-</div>
 <Canvas
   shadows
   camera={{ position: [0, 2, 5], fov: 30 }}
-  style={{ width: '600px', backgroundColor: 'transparent'  , marginBottom:"30px"}} 
+  style={{ borderRadius:'30px',height:'400px',width: '350px', backgroundColor: 'none'  , marginBottom:"30px"}} 
 >
   <color attach="background" args={["transparent"]} />  
   <Experience />
 </Canvas>
+
+</div>
+
 
 </div>
 
