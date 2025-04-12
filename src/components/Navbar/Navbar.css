@@ -117,10 +117,10 @@
     display: none !important;
   }
   .nav-menu {
-      display: none;
+    
       flex-direction: column;
       gap: 15px;
-      width: 100%;
+      width: 100px%;
       margin-bottom: -30px;
       margin: 10px;
       background-color: #111;
