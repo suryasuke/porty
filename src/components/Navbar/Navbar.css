@@ -1,4 +1,3 @@
-
 .navbar{
     display: flex;
     gap: 17%;
@@ -101,13 +100,14 @@
       align-items: flex-start;
       gap: 10px;
       padding: 10px 20px;
+      margin-top:-30px;
       
     }
   
     .hamburger {
       display: block;
       position: absolute;
-      top: 40px;
+      top: 20px;
       right: 40px;
      
     }
@@ -120,6 +120,7 @@
       flex-direction: column;
       gap: 15px;
       width: 100%;
+      margin-bottom: -30px;
       margin: 10px;
       background-color: #111;
       padding: 20px;
