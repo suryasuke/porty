@@ -246,3 +246,155 @@ option:focus{
 .timestamp{
     font-size: 12px;
 }
+
+@media screen and (max-width: 768px) {
+    .login-container {
+      width: 85%;
+      padding: 15px;
+      
+      box-sizing: border-box;
+      height: 85px;
+      margin-top: 45px;
+      margin-right: 20px;
+      background-color: transparent;
+    }
+  
+    #thank {
+      width: 90%;
+      left: 5%;
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .forms {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .forms .input1,
+    select,
+    .texty {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      box-sizing: border-box;
+      color: white;
+    }
+  
+    .texty {
+      height: 100px;
+      resize: vertical;
+    }
+  
+    .btn {
+      width: 50%;
+      font-size: 16px;
+      padding: 12px;
+    
+      margin-top: 80px;
+      margin-bottom: 80px;
+      
+    }
+  
+    .feedbacks {
+      width: 90%;
+      font-size: 16px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+  
+    .feedbacks h2 {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .scroll-to-top-btn {
+      position: fixed;
+      left: 10px;
+      bottom: 20px;
+      height: 40px;
+      width: 40px;
+      font-size: 18px;
+      border-radius: 50%;
+    }
+  
+    .feed-title p {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .names-logo {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    #no-feed,
+    .feed-tit {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 16px;
+    }
+  
+    .title-contains {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 10px;
+      padding-top: 10px;
+    }
+  
+    .title-contains h1 {
+      font-size: 24px;
+      margin-top: 0px;
+    }
+  
+    .draged {
+      height: 385px;
+      padding: 10px;
+      width: 85%;
+      padding: 15px;
+      
+      transition: height 155ms ease;
+      
+    
+    }
+    textarea::placeholder{
+        color: #ffffff;
+    }
+    .forms .input1::placeholder{
+color: #f4f4f4;
+    }
+    select{
+color: #ffffff;
+    }
+    option{
+        color: rgb(246, 30, 30);
+    }
+    select:focus {
+        border-color: rgb(233, 95, 53);
+        outline: none;
+      }
+      
+      /* Custom styling for the <select> element on focus */
+      select:focus option {
+        background-color: #f1f1f1;
+      }
+      .feed-tit{
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 60px;
+        left: -19%;
+
+    }
+    .no-feed{
+        position: relative;
+        top: 70px;
+        height: 210px;
+    }
+  }
+  
