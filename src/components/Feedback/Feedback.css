@@ -399,10 +399,26 @@ color: #ffffff;
     @media screen and (max-width: 768px) {
   #feedbacks {
     width: 100%;
+      height:50px;
     padding: 10px;
     box-sizing: border-box;
   }
+.icons-like{
+    float: right;
+    position: static;
+margin: 0;
 
+}
+.icons-like .counts{
+    margin-left: 8px;
+    font-size: 13px;
+    color: red;
+   
+}
+.counts{
+    color: red;
+}
+        
   .feedbacks {
     width: 95%;
       height:50px;
