@@ -326,8 +326,11 @@ option:focus{
     }
   
     .feed-title p {
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
+    }
+    .feed-title{
+      
     }
   
     .names-logo {
@@ -416,10 +419,12 @@ color: #ffffff;
         }
       
         .feed-title {
+            margin-top:2px;
+            padding-top:3px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          margin-bottom: 10px;
+          margin-bottom: 2px;
         }
       
         #abso {
