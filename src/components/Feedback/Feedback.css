@@ -405,6 +405,7 @@ color: #ffffff;
 
   .feedbacks {
     width: 95%;
+      height:50px;
     margin: 0 auto 20px auto;
     padding: 15px;
     font-size: 16px;
