@@ -191,7 +191,10 @@ function Feedback(props) {
                     {likes[item.id] ? <FavoriteIcon style={{ color: 'red' }} /> : <FavoriteBorderIcon style={{ color: 'red' }} />}
                     <p className='counts'>{count[item.id] ? count[item.id] : 0}</p>
                   </p>
-                <p  className='content' style={{ marginBottom: '5px' }}>{item.content}</p>
+                <p  className='content' style={{ marginBottom: '5px',
+    wordWrap: 'break-word',
+    whiteSpace: 'normal',
+    overflowWrap: 'break-word' }}>{item.content}</p>
                 <p className="timestamp">{getRelativeTime(item.timestamp)}</p>
               </div>
             </div>
