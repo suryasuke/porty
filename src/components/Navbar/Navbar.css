@@ -120,7 +120,7 @@
     display : none ;
        flex-direction: column;
       gap: 15px;
-      width: 280px;
+      width: 255px;
       border: 1px rgb(164, 162, 162) ;
       border-style: dashed;
       margin-bottom: -30px;
