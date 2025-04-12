@@ -16,9 +16,8 @@ const hero = () => {
 <div className='names'>
   <h2>Hey Welcome I'm <span>SURYA S</span></h2>
   <p>I'm a MERN stack developer specializing in PostgreSQL, Express.js, React,
-    and Node.js.I create scalable, high-performance web apps with a focus on clean code.
-    Passionate about tackling challenges and staying updated with the latest technologies my knowledge in full satck</p>
-    
+     and Node.js.I create scalable, high-performance web apps with a focus on clean code.
+     Passionate about tackling challenges and staying updated with the latest technologies my knowledge in full satck</p>
 </div>
 <div className="hero-latest-btn">
 <a href={file} download="surya resume"><div>Download Resume</div></a>
