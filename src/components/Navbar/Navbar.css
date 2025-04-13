@@ -110,6 +110,7 @@
       top: 17.5px;
       right:15px;
         margin-left:12px;
+        user-select:none;
      
     }
 
