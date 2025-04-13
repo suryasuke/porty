@@ -290,12 +290,10 @@ animation-delay: 4s;
       min-height: 160px;
       width: 80%;
        max-height: 210px;
-        border-radius: 0px;
-        border: 1px solid rgb(233, 95, 53);
-        box-shadow: 0 0 10px   rgb(233, 95, 53);
-        border-bottom: 3px solid rgb(233, 95, 53);
-        border-right: 3px solid rgb(233, 95, 53);
-        border-top: 1px solid rgb(233, 95, 53);
+        border-radius: 5px;
+        border: 0px solid rgb(233, 95, 53);
+        
+        
        }
     .icons img{
         position : absolute  ;
@@ -353,4 +351,5 @@ animation-delay: 4s;
           z-index:10
     }
 }
+
 
