@@ -291,7 +291,8 @@ animation-delay: 4s;
       width: 80%;
        max-height: 210px;
         border-radius: 5px;
-        border: 0px solid rgb(233, 95, 53);
+        border: 0px ;
+        overflow-y: auto;
         
         
        }
