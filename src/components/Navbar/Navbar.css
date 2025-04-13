@@ -85,6 +85,7 @@
   cursor: pointer;
   color: white;
   margin-right: 20px;
+   user-select:none;
   background: none;
   border: none;
 }
@@ -110,6 +111,7 @@
       top: 17.5px;
       right:15px;
         margin-left:12px;
+        background: none;
          user-select: none;
      
      
