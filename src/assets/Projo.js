@@ -1,7 +1,7 @@
 const projo =[
    {
     id : 1 , 
-        name : "E-Commerce with React" , 
+        name : "E-Commerce" , 
         des : " The Fishza e-commerce platform provides a seamless shopping experience with an intuitive interface allowing customers to easily browse, add items to their cart  and complete purchases. Utilizing components hooks and the Context API  it ensures dynamic page rendering and efficient data sharing across the site. " ,
         src  : "https://tse4.mm.bing.net/th?id=OIP.O-MPyWLPPHg59PwhUDnXDAAAAA&pid=Api&P=0&h=180" ,
         link : "https://www.linkedin.com/posts/surya-s-99b922272_ecommerce-onlinefishmarket-reactjs-activity-7173176566510809089-2b11?utm_source=share&utm_medium=member_desktop" ,
