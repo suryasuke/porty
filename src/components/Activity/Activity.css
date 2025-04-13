@@ -289,9 +289,9 @@ animation-delay: 4s;
         border-radius: 0px;
     }
     .text-box{
-      min-height: 160px;
+     
       width: 80%;
-       max-height: 220px;
+       height: auto;
         border-radius: 5px;
         padding-bottom:10px;
       
