@@ -230,6 +230,8 @@ animation-delay: 4s;
     .conatin{
         margin-top: -40px;
     }
+    .tb{
+        margin-bottom:8px;}
     .timeline::after{
         position: absolute;
         content: '';
