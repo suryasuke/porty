@@ -65,3 +65,58 @@ animation-range: entry 0  cover 20%;
     color: rgb(233, 95, 53);
     user-select: none;
 }
+
+@media screen and (max-width: 768px) {
+    .proj-container {
+      width: 80%;
+      margin-left: -124.5px;
+     
+      margin-right: 0px;
+      height: auto;
+      
+      transition: height auto 1s linear;
+     
+     
+    }
+    .containering{
+        width: 100%;
+        padding-right: 0px;
+    }
+  
+    .active {
+      height: auto;
+      transition: height auto 1s linear;
+    }
+  
+    .title-contain img {
+      width: 30px;
+      height: 30px;
+      top: 8px;
+      left: 10px;
+    }
+  
+    .title-contain h2 {
+      font-size: 1.2rem;
+    }
+  
+    .view {
+      flex-direction: row;
+      
+      gap: 5px;
+      text-align: center;
+    }
+  
+    .view h3 {
+      margin-top: 16px;
+      width: auto;
+    }
+    .view a{
+margin-top: -10px;
+font-size: 16px;
+    }
+    .read {
+      width: auto;
+      font-size: 0.95rem;
+    }
+  }
+  
