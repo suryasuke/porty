@@ -69,7 +69,8 @@ animation-range: entry 0  cover 20%;
 @media screen and (max-width: 768px) {
     .proj-container {
       width: 80%;
-      margin-left: -124.5px;
+      margin-left: -126.5px;
+      padding-left: 20px;
      
       margin-right: 0px;
       height: auto;
@@ -89,14 +90,15 @@ animation-range: entry 0  cover 20%;
     }
   
     .title-contain img {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       top: 8px;
       left: 10px;
     }
   
     .title-contain h2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      margin-top: 11px;
     }
   
     .view {
