@@ -67,13 +67,14 @@ animation-range: entry 0  cover 20%;
 }
 
 @media screen and (max-width: 768px) {
-    .proj-container {
+     .proj-container {
       width: 80%;
       margin-left: -126.5px;
       padding-left: 20px;
-     
+     margin-top: 0px;
       margin-right: 0px;
       height: auto;
+      margin-bottom: 30px;
       
       transition: height auto 1s linear;
      
