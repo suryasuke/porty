@@ -252,7 +252,7 @@ animation-delay: 4s;
         border-bottom: 15px solid transparent;
         border-right:15px solid rgb(255, 255, 255) ;
        
-        left: -14px;
+        left: -20px;
     }
     .left-arrow{
         height: 0;
@@ -264,17 +264,17 @@ animation-delay: 4s;
         border-bottom: 15px solid transparent;
         border-right:15px solid rgb(255, 255, 255) ;
         border-left: 0px;
-        left: -14px;
+        left: -20px;
     }
     .right-container{
-        left: 7%;
+        left: 5%;
         width: 83%;
         margin: 0px;
         
         padding-right: 0px;
     }
     .left-container{
-        left: 7%;
+        left: 5%;
         width: 83%;
       
         padding-right: 0px;
@@ -283,11 +283,12 @@ animation-delay: 4s;
     .text-box p{
         font-size: 13px;
         margin-left: 0px;
-        width: 78%;
+        width: 80%;
         border-radius: 0px;
     }
     .text-box{
       min-height: 180px;
+      width: 80%;
        max-height: 200px;
         border-radius: 0px;
         border: 1px solid rgb(233, 95, 53);
@@ -352,3 +353,4 @@ animation-delay: 4s;
           z-index:10
     }
 }
+
