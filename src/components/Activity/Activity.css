@@ -237,7 +237,7 @@ animation-delay: 4s;
         height: 125%;
         background: rgb(255, 255, 255);
         top: 0;
-        left: 11%;
+        left: 9%;
         margin-left: -3px;
         z-index:-1;
         animation: moveline 8s linear forwards;
@@ -267,14 +267,14 @@ animation-delay: 4s;
         left: -20px;
     }
     .right-container{
-        left: 5%;
+        left: 2%;
         width: 83%;
         margin: 0px;
         
         padding-right: 0px;
     }
     .left-container{
-        left: 5%;
+        left: 2%;
         width: 83%;
       
         padding-right: 0px;
@@ -302,13 +302,13 @@ animation-delay: 4s;
         width: 80px;
         height: 80px; 
         
-        right : 86.5% ;
+        right : 84.5% ;
          top: 18px ;
           z-index:10
     }
     .hi-img{
         position: absolute;
-        right: 85.5%;
+        right: 83.5%;
         margin-top: -10px;
     }
     .dot{
@@ -353,4 +353,3 @@ animation-delay: 4s;
           z-index:10
     }
 }
-
