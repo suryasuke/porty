@@ -245,6 +245,7 @@ option:focus{
 }
 .timestamp{
     font-size: 12px;
+    margin-top:15px;
 }
 
 @media screen and (max-width: 768px) {
