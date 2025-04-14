@@ -141,8 +141,12 @@ text-align: center;
       margin-right:-11.5px;
     }
   
-    .nav-menu.mobile {
-      display: flex;
+        .nav-menu.mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 13px;
     }
   
     .contact-btn {
