@@ -116,6 +116,10 @@ function Feedback(props) {
   };
 
   console.log("win" , win)
+  
+  note.map((item) => (
+    console.log(item)
+  ))
 
   return (
     <div>
