@@ -16,16 +16,16 @@
  .prev{
 width: 40px;
 height: 40px;
-border: 2px solid white;
+border: 2px solid rgb(0, 0, 0);
 background-color: transparent;
 border-radius: 50%;
 position: absolute;
-top: 88.5%;
-left: 18%;
+top: 95.5%;
+left: 15%;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
+color: rgb(0, 0, 0);
 }
 .mern hr{
 height: 2px;
@@ -65,18 +65,18 @@ transition:  all 1s linear;
     background-color:transparent;
     border-radius: 50%;
     position: absolute;
-    top: 88.5%;
-    left: 79.3%;
+    top: 95.2%;
+    left: 81.8%;
     display: flex;
 justify-content: center;
 align-items: center;
-color: white;
-border: 2px solid white;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(0, 0, 0);
 }
   
 .container h1{
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: 4.6px;
     margin-bottom: 0;
 
@@ -85,13 +85,13 @@ border: 2px solid white;
     display: flex;
     justify-content: center;
     background-color:  transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 130px;
     height: 50px;
     border-top-left-radius: 0;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px ;
     border-bottom-left-radius: 20px;
-    border : 1px solid white ; 
+    border : 1px solid rgb(0, 0, 0) ; 
     font-size: 14px;
     position: absolute;
     margin-top: 35px;
@@ -103,7 +103,7 @@ border: 2px solid white;
     padding-right: 14px;
     max-width: 1000px;
     height: 70px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px; 
     margin-top: 100px;
     display: flex;
@@ -113,6 +113,7 @@ border: 2px solid white;
 
     
 }
+
 .mern img{
     width: 52px;
     height: 50px;
