@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import '../Feedback/Feedback.css';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import FaceIcon from '@mui/icons-material/Face';
+import Face3Icon from '@mui/icons-material/Face3';
 
 function Feedback(props) {
-
+  const [win , setwin] = useState();
   const [drag, setDrag] = useState(false);
   const [submitteds , setsubmit] = useState(false);
   const [likes, setLikes] = useState(()=>{
@@ -103,7 +105,17 @@ function Feedback(props) {
     localStorage.setItem('likes' , JSON.stringify(likes));
   }, [count ,likes]);
 
+  useEffect(() => {
+    const handleScroll = () => setwin(window.scrollY > 100); // Set visibility after scrolling 100px down
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  console.log("win" , win)
 
   return (
     <div>
@@ -170,8 +182,7 @@ function Feedback(props) {
               <div className="feedbacks">
                 <div className='feed-title'>
                   <div id='abso'>
-                 
-                  <h2>{item.name.slice(0, 1).toUpperCase()}</h2>
+                  <h2>{item.Gender='male' ? <FaceIcon/> : <Face3Icon/>}</h2>
                   <h3>{item.name}</h3>
                
                    </div>
@@ -181,10 +192,7 @@ function Feedback(props) {
                     {likes[item.id] ? <FavoriteIcon style={{ color: 'red' }} /> : <FavoriteBorderIcon style={{ color: 'red' }} />}
                     <p className='counts'>{count[item.id] ? count[item.id] : 0}</p>
                   </p>
-                <p  className='content' style={{ marginBottom: '5px',
-    wordWrap: 'break-word',
-    whiteSpace: 'normal',
-    overflowWrap: 'break-word' }}>{item.content}</p>
+                <p className='content' style={{ marginBottom: '15px' }}>{item.content}</p>
                 <p className="timestamp">{getRelativeTime(item.timestamp)}</p>
               </div>
             </div>
@@ -198,7 +206,7 @@ function Feedback(props) {
         )
        
         }
-      
+         {win && <button onClick={scrollToTop} className="scroll-to-top-btn"><KeyboardArrowUpIcon/></button>}
       </div>
      
     </div>
@@ -206,4 +214,3 @@ function Feedback(props) {
 }
 
 export default Feedback;
-
