@@ -182,7 +182,7 @@ function Feedback(props) {
               <div className="feedbacks">
                 <div className='feed-title'>
                   <div id='abso'>
-                  <h2>{item.Gender='male' ? <FaceIcon/> : <Face3Icon/>}</h2>
+                  <h2>{item.Gender==='male' ? <FaceIcon/> : <Face3Icon/>}</h2>
                   <h3>{item.name}</h3>
                
                    </div>
