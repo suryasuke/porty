@@ -76,18 +76,20 @@ animation-delay: 4s;
     padding: 5px 20px 37px 20px;
     padding-top: 0px;
     padding-bottom: 42px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     font-size: 12px;
     position: relative;
     width: 75%;
     max-width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
      
-    max-height: unset;
+    height: auto;
     margin-top: 16px;
     border: 1px solid  rgb(255, 255, 255);
     color: rgb(23, 23, 23);
-    box-shadow: 0 0 10px  rgb(219, 219, 218);
+    box-shadow: 0 0 10px  rgb(75, 75, 75);
 }
 .contain-dot{
     display: flex;
@@ -106,7 +108,7 @@ animation-delay: 4s;
     margin-right: 3.0px;
     top: 100px;
     opacity: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     border-radius: 50%;
     box-shadow: 
         0 0 0 4px #9b9b9b22, 
@@ -173,7 +175,7 @@ animation-delay: 4s;
     content: '';
     width: 3px;
     height: 125%;
-    background: rgb(255, 255, 255);
+    background: rgb(128, 128, 128);
     top: 0;
     left: 50%;
     margin-left: -3px;
