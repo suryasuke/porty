@@ -539,8 +539,9 @@ color: #535353;
     margin: 0;
     font-weight: bold;
   }
-        button .btn{
+        input.btn{
         margin-top:20px;
+            margin-bottom:10px;
         }
 
   .feedbacks p {
