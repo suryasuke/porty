@@ -483,12 +483,10 @@ color: #ffffff;
     gap: 10px;
   }
         .feedbacks #abso h2{
-            margin-top:4px;
+            margin-top:5.5px;
             margin-bottom:9px;
         }
-        ,feedbacks #abso h2{
-            margin-bottom:3px;
-        }
+       
         .feedbacks .content{
             margin-top:10px;
             text-wrap:wrap;
