@@ -529,6 +529,8 @@ color: #535353;
   .content{
     margin-bottom: 5px;
   }
+        select {
+            height :12px;}
 
   .feedbacks .counts {
     margin: 0;
