@@ -114,6 +114,10 @@ text-align: center;
      
      
     }
+      img#imgslogo {
+        margin-top: 14px;
+        width: 60px;
+        height: 60px;}
 
   .contact-btn{
     display: none !important;
