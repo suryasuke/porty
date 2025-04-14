@@ -447,11 +447,11 @@ color: #535353;
       select:focus option {
         background-color: #f1f1f1;
       }
-      .feed-tit{
-        color: rgb(255, 255, 255);
+      .feed-tit {
+        color: rgb(60, 60, 60);
         position: relative;
         top: 60px;
-        left: -19%;
+        left: -15%;
 
     }
     .no-feed{
