@@ -384,7 +384,7 @@ margin-bottom:10px;
     display: flex;
     justify-content: center;
     align-items: center;
-        height:50px;
+        height:auto;
 }
     .forms .input1::placeholder{
 color: #f4f4f4;
