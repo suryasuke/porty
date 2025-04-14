@@ -97,6 +97,7 @@
       align-items: center;
       height: auto;
       padding: 20px;
+        border : none;
       box-shadow: none;
       background-color: transparent;
       border-radius: 0;
@@ -107,6 +108,7 @@
       margin: 20px 0 0 0;
       width: 90%;
       display: flex;
+        border:none;
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -114,12 +116,12 @@
   
     .names h2 {
       font-size: 35px;
-      color: white;
+      color: black;
     }
   
     .names p {
       font-size: 16px;
-      color: white;
+      color: black;
       text-wrap:wrap;
     }
   
