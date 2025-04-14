@@ -471,8 +471,9 @@ color: #535353;
     font-size: 16px;
       height:auto;
     border-radius: 10px;
+      border:1px solid rgb(255, 255, 255);
     background-color: #f9f9f9;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 5px rgb(255, 255, 255);
   }
 
   .feedbacks .feed-title {
@@ -534,7 +535,7 @@ color: #535353;
     margin: 10px 0;
   }
   .content{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .feedbacks .counts {
