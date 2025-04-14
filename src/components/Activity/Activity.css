@@ -242,7 +242,7 @@ animation-delay: 4s;
         height: 125%;
         background: rgb(128, 128, 128);
         top: 0;
-        left: 9%;
+        left: 7%;
         margin-left: -3px;
         z-index:-1;
         animation: moveline 8s linear forwards;
@@ -273,14 +273,14 @@ animation-delay: 4s;
     }
     .right-container{
         left: 2%;
-        width: 81%;
+        width: 83%;
         margin: 0px;
         
         padding-right: 0px;
     }
     .left-container{
         left: 2%;
-        width: 81%;
+        width: 83%;
       
         padding-right: 0px;
         
@@ -288,12 +288,12 @@ animation-delay: 4s;
     .text-box p{
         font-size: 13px;
         margin-left: 0px;
-        width: 80%;
+        width: 87%;
         border-radius: 0px;
     }
     .text-box{
      
-      width: 80%;
+      width: 83%;
        height: auto;
         border-radius: 5px;
         padding-bottom:10px;
@@ -307,13 +307,13 @@ animation-delay: 4s;
         width: 80px;
         height: 80px; 
         
-        right : 83.5% ;
+        right : 84.5% ;
          top: 18px ;
           z-index:10
     }
     .hi-img{
         position: absolute;
-        right: 82.5%;
+        right: 83.5%;
         margin-top: -10px;
     }
     .dot{
