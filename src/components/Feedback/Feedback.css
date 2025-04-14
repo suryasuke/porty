@@ -347,6 +347,8 @@ margin-bottom:10px;
      height:auto;
       margin: 0 auto;
         word-wrap: break-word; 
+        border:1px solid rgb(233, 95, 53);
+        box-shadow:0 0 5px rgb(233,95,53);
     }
   
     .feedbacks h2 {
