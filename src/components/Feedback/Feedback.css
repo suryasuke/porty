@@ -96,6 +96,10 @@ margin-left: 396px;
     padding-top: 10px;
     
 }
+.content{
+
+margin-bottom:15px;
+}
 .forms .input1{
     width: 345px;
     height: 37px;
@@ -297,6 +301,10 @@ option:focus{
       margin-bottom: 80px;
       
     }
+    .content{
+
+margin-bottom:10px;
+}
   
     .feedbacks {
       width: 85%;
