@@ -261,6 +261,7 @@ option:focus{
       height: 85px;
       margin-top: 45px;
       margin-right: 20px;
+        margin-bottom:-7px;
       background-color: transparent;
     }
   
@@ -379,6 +380,12 @@ margin-bottom:10px;
     textarea::placeholder{
         color: #ffffff;
     }
+    .whole-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        height:50px;
+}
     .forms .input1::placeholder{
 color: #f4f4f4;
     }
