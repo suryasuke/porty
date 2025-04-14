@@ -466,17 +466,7 @@ color: #535353;
     box-sizing: border-box;
   }
 
-  .feedbacks {
-    width: 95%;
-    margin: 0 auto 20px auto;
-    padding: 15px;
-    font-size: 16px;
-      height:auto;
-    border-radius: 10px;
-      border:1px solid rgb(255, 255, 255);
-    background-color: #f9f9f9;
-    box-shadow: 0 0px 5px rgb(255, 255, 255);
-  }
+
 
   .feedbacks .feed-title {
     margin-top: -15px;
