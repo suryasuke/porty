@@ -1,9 +1,11 @@
 .proj-container{
-background-color: white;
+background-color: transparent;
 width: 80%;
 height: 180px;
 border-radius: 30px;
+border: 1px solid rgb(253, 96, 49);
 border-top-left-radius: 0px ;
+border-bottom-left-radius:0px ;
 position: relative;
 top: 10px;
 left: 140px;
@@ -12,8 +14,10 @@ margin-bottom: 40px;
 padding: 5px 25px 15px 25px; 
 display: flex;
 flex-direction: column;
+font-family: "Montserrat", sans-serif;
+    font-style: normal;
 gap: 5px;
-transition: height 0.3s ;
+
 animation: seeda 1s linear;
 animation-timeline: view();
 animation-range: entry 0  cover 20%;
@@ -64,6 +68,7 @@ animation-range: entry 0  cover 20%;
 .read{
     color: rgb(233, 95, 53);
     user-select: none;
+    width: 150px;
 }
 
 @media screen and (max-width: 768px) {
