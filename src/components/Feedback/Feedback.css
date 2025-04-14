@@ -407,6 +407,23 @@ color: #ffffff;
     padding: 10px;
     box-sizing: border-box;
   }
+          #thank {
+        width: 70%;
+        height: 50px;
+        background-color: #e95f35;
+        color: white;
+        border: none;
+        border-radius:6px ;
+        text-align: center;
+     padding-bottom: 5px;
+        display: flex;
+        justify-content: center ;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+    
+    }
 
   .feedbacks {
     width: 95%;
