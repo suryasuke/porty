@@ -124,7 +124,7 @@ function Feedback(props) {
   return (
     <div>
       <div className='whole-contain'>1w
-        {submitteds && <div id='thank'><h4>Your form submitted !!!</h4></div> }
+        {submitteds && <div id='thank'><h4>Your form submitted , please check you mail (spam)</h4></div> }
         <div className={`login-container ${drag ? 'draged' : ''}`}>
           <div className='title-contains'>
             <h1>Feedback</h1>
