@@ -56,7 +56,7 @@ function ProjectsCompo() {
               <h3
                 onClick={() => handleClick(project.id)}
                 className='read'
-                style={{ width: '100px' }}
+                
               >
                 {needed}
               </h3>
