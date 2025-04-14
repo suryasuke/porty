@@ -461,6 +461,9 @@ color: #ffffff;
             margin-top:4px;
             margin-bottom:9px;
         }
+        ,feedbacks #abso h2{
+            margin-bottom:3px;
+        }
         .feedbacks .content{
             margin-top:10px;
             text-wrap:wrap;
