@@ -240,7 +240,7 @@ animation-delay: 4s;
         content: '';
         width: 3px;
         height: 125%;
-        background: rgb(255, 255, 255);
+        background: rgb(128, 128, 128);
         top: 0;
         left: 9%;
         margin-left: -3px;
@@ -273,14 +273,14 @@ animation-delay: 4s;
     }
     .right-container{
         left: 2%;
-        width: 83%;
+        width: 81%;
         margin: 0px;
         
         padding-right: 0px;
     }
     .left-container{
         left: 2%;
-        width: 83%;
+        width: 81%;
       
         padding-right: 0px;
         
