@@ -21,7 +21,7 @@
     background-color: rgb(233, 95, 53);
     color: rgb(251, 251, 251);
     border-radius: 0px;
-    margin-left: 140px;
+    
 font-size: 13px;
 font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -37,8 +37,8 @@ text-align: center;
     cursor: pointer;
 }
 #imgslogo{
-    width: 200px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     margin-left: 55px;
    
     padding: 0px;
@@ -54,26 +54,12 @@ text-align: center;
     color: white;
     
 }
-.nav-logo p{
-    font-size: 20px;
-    font-family: "Playwrite CU", cursive;
-    color: white;
-    margin-left: 0px;
-    margin-right: 10px;
-    
-    
-}
-.nav-logo p span{
-   
-    font-family: "Playwrite CU", cursive;
-    color: rgb(233, 95, 53);
-    
-}
+
 .nav-menu{
     list-style: none;
     display: flex;
     gap:60px ;
-    margin-left: 20px;
+    
 }
 .nav-menu li{
    
@@ -164,8 +150,8 @@ text-align: center;
     }
   
     #imgslogo {
-      width: 140px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       margin-left: 10px;
     }
   }
