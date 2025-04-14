@@ -132,11 +132,13 @@ text-align: center;
       border-style: dashed;
       margin-bottom: -30px;
       margin: 10px;
-      background-color: #111;
+      background-color: transaparent;
+      font-family: "Montserrat", sans-serif;
+    font-style: normal;
       padding: 20px;
       border-radius: 10px;
       z-index: 999;
-      margin-right:-10px;
+      margin-right:-10.5px;
     }
   
     .nav-menu.mobile {
