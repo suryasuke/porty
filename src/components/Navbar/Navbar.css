@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .navbar{
     display: flex;
     gap: 17%;
@@ -16,14 +19,22 @@
     height: 40px;
     border: none;
     background-color: rgb(233, 95, 53);
-    color: white;
-    border-radius: 10px;
+    color: rgb(251, 251, 251);
+    border-radius: 0px;
     margin-left: 140px;
-
+font-size: 13px;
+font-family: "Montserrat", sans-serif;
+    font-style: normal;
+font-weight: 400;
+padding-top: 2px;
+text-align: center;
 }
 .navbar button:hover{
-    transform: scale(1.04);
-    transition:1ms;
+    
+    background-color: transparent;
+    color:rgb(233, 95, 53);
+    border: 2px solid  rgb(233, 95, 53) ;
+    cursor: pointer;
 }
 #imgslogo{
     width: 200px;
@@ -35,7 +46,7 @@
 .nav-logo img{
     width: 52px;
     height: 52px;
-    margin-top: 7px;
+    margin-top: 0px;
 }
 .nav-logo{
     display: flex;
@@ -66,7 +77,8 @@
 }
 .nav-menu li{
    
-    color: white;
+    color: rgb(87, 87, 87);
+  
    
 
 }
@@ -85,7 +97,6 @@
   cursor: pointer;
   color: white;
   margin-right: 20px;
-   user-select:none;
   background: none;
   border: none;
 }
