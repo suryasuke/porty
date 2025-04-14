@@ -23,7 +23,7 @@ function Navbar(props) {
       </div>
 
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-       {menuOpen ? <CloseIcon/> : <MenuIcon/> }
+      {menuOpen ? <CloseIcon style={{color : 'black'}}/> : <MenuIcon style={{color:'black'}}/> }
       </div>
 
       <ul className={`nav-menu ${menuOpen ? 'mobile' : ''}`}>
