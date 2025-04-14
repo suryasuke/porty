@@ -304,6 +304,7 @@ option:focus{
     .content{
 
 margin-bottom:10px;
+        width:70%;
 }
   
     .feedbacks {
