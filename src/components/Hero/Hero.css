@@ -3,6 +3,8 @@
     display: flex;
     margin-top: 0;
     box-shadow: 0 0 35px white;
+    border: 2px solid rgb(82, 82, 82);
+    border-style: dashed;
     border-radius: 25px;
     width: 90%;
     height: 400px;
@@ -12,6 +14,8 @@
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
   }
   
   .whole-contain {
@@ -24,20 +28,26 @@
     color: rgb(0, 0, 0);
     margin-left: 100px;
     margin-top: 10px;
+    padding-top: 30px;
   }
   
   .names h2 {
-    font-size: 45px;
+    font-size: 37px;
   }
   
   .names span {
     color: rgb(233, 95, 53);
+    margin-left: 8px;
   }
   
   .names img {
     width: 30px;
     height: 30px;
   }
+  .names h2 p span{
+    color: rgb(233, 95, 53) ;
+    margin-left: 0px;
+  } 
   
   .hero-left .hero-latest-btn {
     color: white;
@@ -47,9 +57,11 @@
     border: none;
     border-radius: 7px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 14px;
     margin-top: 50px;
-    padding-top: 14px;
+    padding-top: 18px;
   }
   
   .hero-left .hero-latest-btn:hover a {
@@ -59,7 +71,7 @@
   .hero-left .hero-latest-btn a {
     color: white;
     text-decoration: none;
-    cursor: none;
+    cursor: pointer;
   }
   
   .hero-left .hero-latest-btn a div:hover {
