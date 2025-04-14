@@ -24,6 +24,9 @@
    box-shadow : 0 0 10px  rgb(233, 95, 53) ;  
   
 }
+.feedbacks .content{
+margin-bottom:12px;
+}
 #thank{
     width: 440px;
     height: 50px;
