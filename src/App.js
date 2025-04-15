@@ -10,7 +10,7 @@ import axios from 'axios';
 import PathCompo from "../src/components/PathCompo.jsx";
 import '../src/App.css';
 import DangerousRoundedIcon from '@mui/icons-material/DangerousRounded';
-import SplashCursor from './SplashCursor'
+
 
 
 function App() {
@@ -110,7 +110,7 @@ function App() {
   return (
     <div className={done ? `overflow-ah` : ''}>
 <div className= {`${bgda} ${done ? `non-intract` : ''}`} >
-       <SplashCursor />
+       
  <BrowserRouter>
     
       <Navbar currentPath={currentPath}/>
