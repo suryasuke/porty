@@ -314,7 +314,7 @@ animation-delay: 4s;
    
     .ni{
         position :absolute;
-         left :-2%;
+         left :-4%;
          margin-top: -1px;
          z-index:10
     }
