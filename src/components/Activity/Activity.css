@@ -302,20 +302,22 @@ animation-delay: 4s;
         
         
        }
-     .icons img{
+    .icons img{
         position : absolute  ;
         width: 80px;
         height: 80px; 
         
-        right : 83.5% ;
+        right : 84.5% ;
          top: 18px ;
           z-index:10
     }
    
     .ni{
         position :absolute;
-         left :-1%;
-         margin-top: -1px;}
+         left :-2%;
+         margin-top: -1px;
+         z-index:10
+    }
         
     .dot{
         height: 8px;
