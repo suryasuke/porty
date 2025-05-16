@@ -2,7 +2,7 @@ import React from 'react'
 import '../Activity/Activity.css'
 
 
-import activity from '../../assets/Acitivity';
+import activity from '../../assets/Activity';
 
 
 function Activity() {
