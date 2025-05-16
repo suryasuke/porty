@@ -29,9 +29,9 @@ opacity: 0;
      top: 15px ;
       z-index:10
 }
-.hi-img{
+.ni{
     position :absolute;
-     right :85%;
+     left :-6%;
      margin-top: -8px;
 }
 
@@ -302,20 +302,21 @@ animation-delay: 4s;
         
         
        }
-    .icons img{
+     .icons img{
         position : absolute  ;
         width: 80px;
         height: 80px; 
         
-        right : 84.5% ;
+        right : 83.5% ;
          top: 18px ;
           z-index:10
     }
-    .hi-img{
-        position: absolute;
-        right: 83.5%;
-        margin-top: -10px;
-    }
+   
+    .ni{
+        position :absolute;
+         left :-1%;
+         margin-top: -1px;
+        
     .dot{
         height: 8px;
         width: 7px;
