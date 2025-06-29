@@ -7,19 +7,12 @@ import { SkeletonUtils } from 'three-stdlib'
 export function Avatar(props) {
  
  
- 
-  useEffect(()=>{
-  actions["Typing"].reset().play();
-  },[actions]);
+
 
   const group = useRef();
   const { scene } = useGLTF('models/6858260d2ceb66a679a1c816.glb');
 
-  const {animations : typingAnimation} = useFBX("animations/Typing.fbx");
- console.log(typingAnimation);
-  // console.log(typingAnimations);
-  typingAnimation[0].name = "Typing";
-  const { actions } = useAnimations(typingAnimation, group);
+
 
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone);
