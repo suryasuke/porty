@@ -7,30 +7,26 @@ import FaceIcon from '@mui/icons-material/Face';
 import Face3Icon from '@mui/icons-material/Face3';
 
 function Feedback(props) {
-  const [win , setwin] = useState();
+  const [win, setWin] = useState(false);
   const [drag, setDrag] = useState(false);
-  const [submitteds , setsubmit] = useState(false);
-  const [Animated , setAnimation] = useState(false);
-  const [likes, setLikes] = useState(()=>{
-    const prevLike = localStorage.getItem('likes');
-    try{
-      return prevLike ? JSON.parse(prevLike) : {} ; 
-    }catch(e){
-      console.error("Invalid JSON in localStorage for 'count', clearing it.", e);
-      localStorage.removeItem('likes'); 
-      return {}; 
+  const [submitteds, setSubmit] = useState(false);
+  const [Animated, setAnimation] = useState(false);
+
+  const [likes, setLikes] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('likes')) || {};
+    } catch {
+      localStorage.removeItem('likes');
+      return {};
     }
   });
-  
- 
+
   const [count, setCount] = useState(() => {
-    const prevValue = localStorage.getItem('count');
     try {
-      return prevValue ? JSON.parse(prevValue) : {}; 
-    } catch (e) {
-      console.error("Invalid JSON in localStorage for 'count', clearing it.", e);
-      localStorage.removeItem('count'); 
-      return {}; 
+      return JSON.parse(localStorage.getItem('count')) || {};
+    } catch {
+      localStorage.removeItem('count');
+      return {};
     }
   });
 
@@ -38,105 +34,102 @@ function Feedback(props) {
     username: "",
     content: "",
     Gender: "",
-    email : "" , 
+    email: ""
   });
+
+  const { onadd, note } = props;
 
   const clicked = () => setDrag(prev => !prev);
 
   const getRelativeTime = (timestamp) => {
     const now = new Date();
     const then = new Date(timestamp);
-    const diffInSeconds = Math.floor((now - then) / 1000);
+    const seconds = Math.floor((now - then) / 1000);
 
-    if (diffInSeconds < 60) return `${diffInSeconds} second${diffInSeconds !== 1 ? 's' : ''} ago`;
-    const diffInMinutes = Math.floor(diffInSeconds / 60);
-    if (diffInMinutes < 60) return `${diffInMinutes} minute${diffInMinutes !== 1 ? 's' : ''} ago`;
-    const diffInHours = Math.floor(diffInMinutes / 60);
-    if (diffInHours < 24) return `${diffInHours} hour${diffInHours !== 1 ? 's' : ''} ago`;
-    const diffInDays = Math.floor(diffInHours / 24);
-    return `${diffInDays} day${diffInDays !== 1 ? 's' : ''} ago`;
+    if (seconds < 60) return `${seconds} second${seconds !== 1 ? 's' : ''} ago`;
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes} minute${minutes !== 1 ? 's' : ''} ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
+    const days = Math.floor(hours / 24);
+    return `${days} day${days !== 1 ? 's' : ''} ago`;
   };
-
-  const { onadd, note } = props;
-
-  
 
   const submitted = (e) => {
     e.preventDefault();
 
-    if (value.username.trim() === "" && value.content.trim() === "" && value.Gender.trim() === "" && value.email.trim() === "") {
+    if (
+      value.username.trim() === "" ||
+      value.content.trim() === "" ||
+      value.Gender.trim() === "" ||
+      value.email.trim() === ""
+    ) {
       alert("Please fill out all the fields.");
       return;
     }
 
     const timestamp = new Date().toISOString();
     onadd({ id: Date.now(), ...value, timestamp });
-    setsubmit(true);
+    setSubmit(true);
 
-    setTimeout(()=>{
-      setsubmit(false)
-    } , 4000)
+    setTimeout(() => setSubmit(false), 4000);
 
-    setValue({ username: "", content: "", Gender: "" ,email:""});
+    setValue({ username: "", content: "", Gender: "", email: "" });
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setValue(prevValue => ({ ...prevValue, [name]: value }));
+    setValue(prev => ({ ...prev, [name]: value }));
   };
 
   const toggleLike = (id) => {
-    setLikes(prevLikes => ({
-      ...prevLikes,
-      [id]: !prevLikes[id], 
-    }));
-
+    setLikes(prev => ({ ...prev, [id]: !prev[id] }));
     increaseCount(id);
   };
 
   const increaseCount = (id) => {
     setCount(prev => ({
       ...prev,
-      [id]: (prev[id] || 0) + (likes[id] ? -1 : 1), 
+      [id]: (prev[id] || 0) + (likes[id] ? -1 : 1),
     }));
   };
 
   useEffect(() => {
-    localStorage.setItem('count', JSON.stringify(count)); 
-    localStorage.setItem('likes' , JSON.stringify(likes));
-  }, [count ,likes]);
+    localStorage.setItem('count', JSON.stringify(count));
+    localStorage.setItem('likes', JSON.stringify(likes));
+  }, [count, likes]);
 
   useEffect(() => {
-    const handleScroll = () => setwin(window.scrollY > 100); // Set visibility after scrolling 100px down
+    const handleScroll = () => setWin(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  console.log("win" , win)
-
-
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <div>
       <div className='whole-contain'>
-        {submitteds && <div id='thank'><p>Your form submitted , please check you spam mail</p></div> }
+        {submitteds && (
+          <div id='thank'>
+            <p>Your form submitted, please check your spam mail</p>
+          </div>
+        )}
         <div className={`login-container ${drag ? 'draged' : ''}`}>
           <div className='title-contains'>
             <h1>Feedback</h1>
-            <p style={{ fontWeight: 'bold' }} onClick={clicked}>{drag ? 'Close' : 'Give Feed'}</p>
+            <p style={{ fontWeight: 'bold' }} onClick={clicked}>
+              {drag ? 'Close' : 'Give Feed'}
+            </p>
           </div>
 
           {drag && (
-            <form onSubmit={submitted} className={`forms`}>
+            <form onSubmit={submitted} className='forms'>
               <input
                 onChange={handleChange}
                 value={value.username}
                 placeholder='Your name'
-                className="input1"
+                className='input1'
                 type='text'
                 name='username'
               />
@@ -144,30 +137,34 @@ function Feedback(props) {
                 onChange={handleChange}
                 value={value.email}
                 placeholder='Email'
-                className="input1"
+                className='input1'
                 type='text'
                 name='email'
               />
-              
               <select
-                id="gender"
-                name="Gender"
+                id='gender'
+                name='Gender'
                 value={value.Gender}
                 onChange={handleChange}>
-                <option value="" disabled>Select Gender</option>
+                <option value='' disabled>Select Gender</option>
                 <option value='male'>Male</option>
                 <option value='female'>Female</option>
               </select>
-
               <textarea
                 className='texty'
                 onChange={handleChange}
                 value={value.content}
                 placeholder='Write your feedback...'
-                name="content"
-                id="text-area"
+                name='content'
+                id='text-area'
               ></textarea>
-              <button className={`btn submit-feed-btn ${Animated ? 'animated' : ''}`} onMouseEnter={()=>setAnimation(true)} onMouseLeave = {()=> setAnimation(false)}>Submit</button>
+              <button
+                className={`btn submit-feed-btn ${Animated ? 'animated' : ''}`}
+                onMouseEnter={() => setAnimation(true)}
+                onMouseLeave={() => setAnimation(false)}
+              >
+                Submit
+              </button>
             </form>
           )}
         </div>
@@ -178,48 +175,44 @@ function Feedback(props) {
       </div>
 
       <div className='no-feed'>
-        {note.length > 0 ? (
+        {Array.isArray(note) && note.length > 0 ? (
           note.map((item) => (
-            <div>
             <div key={item.id} id='feedbacks'>
-              <div className="feedbacks">
+              <div className='feedbacks'>
                 <div className='feed-title'>
                   <div id='abso'>
-                  <h2>{item.gender==="male" ? <FaceIcon/> : item.Gender==="male" ? <Face3Icon/> : ''}</h2>
-                  <h3>{item.name}</h3>
-               
-                   </div>
-                 
+                    <h2>{(item.gender || item.Gender) === "male" ? <FaceIcon /> : <Face3Icon />}</h2>
+                    <h3>{item.name}</h3>
+                  </div>
                 </div>
-                 <p className='icons-like' onClick={() => toggleLike(item.id)}>
-                    {likes[item.id] ? <FavoriteIcon style={{ color: 'red' }} /> : <FavoriteBorderIcon style={{ color: 'red' }} />}
-                    <p className='counts'>{count[item.id] ? count[item.id] : 0}</p>
-                  </p>
+                <p className='icons-like' onClick={() => toggleLike(item.id)}>
+                  {likes[item.id] ? (
+                    <FavoriteIcon style={{ color: 'red' }} />
+                  ) : (
+                    <FavoriteBorderIcon style={{ color: 'red' }} />
+                  )}
+                  <p className='counts'>{count[item.id] || 0}</p>
+                </p>
                 <p className='content'>{item.content}</p>
-                <p className="timestamp">{getRelativeTime(item.timestamp)}</p>
+                <p className='timestamp'>{getRelativeTime(item.timestamp)}</p>
               </div>
-            </div>
-            
-            
-            
             </div>
           ))
         ) : (
           <p id='no-feed'>No feedback yet.</p>
-        )
-       
-        }
-         {win && 
-        <div className="scroll-effect">
-  <div className="scroll-to-top-wrapper">
-    <div className="rotating-border"></div>
-    <button onClick={scrollToTop} className="scroll-to-top-btn">
-      <span className="Span-icon" ><KeyboardArrowUpIcon /></span>
-    </button>
-  </div>
-</div>}
+        )}
+
+        {win && (
+          <div className='scroll-effect'>
+            <div className='scroll-to-top-wrapper'>
+              <div className='rotating-border'></div>
+              <button onClick={scrollToTop} className='scroll-to-top-btn'>
+                <span className='Span-icon'><KeyboardArrowUpIcon /></span>
+              </button>
+            </div>
+          </div>
+        )}
       </div>
-     
     </div>
   );
 }
