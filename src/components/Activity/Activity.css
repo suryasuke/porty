@@ -3,9 +3,13 @@ padding: 10px 50px;
 position: relative;
 width: 50%;
 background: none;
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 animation: movedown 2s linear forwards;
 opacity: 0;
+}
+
+.conatin{
+    margin-top: 4%;
 }
 
 @keyframes movedown {
@@ -28,6 +32,11 @@ opacity: 0;
     right : 62px ;
      top: 15px ;
       z-index:10
+}
+.ni{
+    position :absolute;
+     left :-6%;
+     margin-top: -8px;
 }
 
 .container-time:nth-child(1){
@@ -56,11 +65,6 @@ animation-delay: 4s;
     animation-delay: 8s;
 }
           
-        
-
-
-
-
 
 .timeline{
     position: relative;
@@ -71,24 +75,30 @@ animation-delay: 4s;
     padding: 5px 20px 37px 20px;
     padding-top: 0px;
     padding-bottom: 42px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     font-size: 12px;
     position: relative;
     width: 75%;
     max-width: 80%;
-
-    max-height: 210px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+     
+    height: auto;
     margin-top: 16px;
     border: 1px solid  rgb(255, 255, 255);
     color: rgb(23, 23, 23);
-    box-shadow: 0 0 10px  rgb(219, 219, 218);
+    box-shadow: 0 0 10px  rgb(75, 75, 75);
+}
+.dark-mode .text-box{
+         box-shadow: 0 0 10px  rgb(248, 248, 248);
 }
 .contain-dot{
     display: flex;
     justify-content: center;
     height: 100%;
 }
+
 .tb{
     display: flex;
     flex-direction: column;
@@ -101,7 +111,7 @@ animation-delay: 4s;
     margin-right: 3.0px;
     top: 100px;
     opacity: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     border-radius: 50%;
     box-shadow: 
         0 0 0 4px #9b9b9b22, 
@@ -151,9 +161,25 @@ animation-delay: 4s;
 .text-box p{
     font-size: 13px;
     margin-left: 0px;
+    
+}
+
+.dark-mode .tb i{
+    color:white;
+}
+
+.dark-mode .tb p{
+    color:white;
+}
+
+
+.light-mode .text-box p,i{
+    color:rgb(0, 0, 0);
 }
 .text-box h1{
     color: rgb(233, 95, 53);
+    text-align: start;
+    margin-top: 20px;
 }
 .left-container{
     left: 0;
@@ -168,7 +194,7 @@ animation-delay: 4s;
     content: '';
     width: 3px;
     height: 125%;
-    background: rgb(255, 255, 255);
+    background: rgb(128, 128, 128);
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -217,4 +243,136 @@ animation-delay: 4s;
     border-bottom: 15px solid transparent;
     border-right:15px solid rgb(255, 255, 255) ;
     left: -14px;
+}
+
+@media screen and (max-width:768px){
+    
+
+    .conatin{
+        
+        padding-top: 0px;
+    }
+    .timeline::after{
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 125%;
+        background: rgb(159, 159, 159);
+        top: 0;
+        left: 9%;
+        margin-left: -3px;
+        z-index:-1;
+        animation: moveline 8s linear forwards;
+    }
+    .right-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right:15px solid rgb(255, 255, 255) ;
+       
+        left: -14px;
+    }
+    .left-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right:15px solid rgb(255, 255, 255) ;
+        border-left: 0px;
+        left: -14px;
+    }
+    .right-container{
+        left: 2%;
+        width: 83%;
+        margin: 0px;
+        
+        padding-right: 0px;
+    }
+    .left-container{
+        left: 2%;
+        width: 83%;
+      
+        padding-right: 0px;
+        
+    }
+    .text-box p{
+        font-size: 13px;
+        margin-left: 0px;
+        width: 80%;
+        border-radius: 0px;
+    }
+    .text-box{
+      min-height: 160px;
+      width: 80%;
+       max-height: auto;
+        border-radius: 5px;
+        border: 0px solid rgb(233, 95, 53);
+        padding-bottom: 5px;
+        
+        
+       }
+    .icons img{
+        position : absolute  ;
+        width: 80px;
+        height: 80px; 
+        
+        right : 84.5% ;
+         top: 18px ;
+          z-index:10
+    }
+   
+    .ni{
+        position :absolute;
+         left :-4%;
+         margin-top: -1px;
+         z-index:10
+    }
+    .dot{
+        height: 8px;
+        width: 7px;
+        position: absolute; 
+        margin-right: 3.0px;
+        right: 89.5%;
+        top: 100px;
+        opacity: 0;
+        background-color:rgb(255, 255, 255);
+        border-radius: 50%;
+        box-shadow: 
+            0 0 0 4px #9b9b9b22, 
+            0 0 0 10px #8f8f8e22, 
+            0 0 23px rgb(255, 255, 255),
+            0 0 40px 5px  rgb(255, 255, 255) ,
+            0 0 60px 10px rgb(255, 255, 255)  ; 
+            
+        animation: movedot 12s linear forwards;
+    }
+    .tb{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .tb p{
+        width: 100%;
+    }
+    .tb h1{
+        margin-top: 8px;
+        margin-bottom: 5px;
+        word-wrap: break-word;
+        font-size: 20px;
+    }
+    .icons img{
+        position : absolute  ;
+        width: 70px;
+        height: 70px; 
+        
+        
+          z-index:10
+    }
 }

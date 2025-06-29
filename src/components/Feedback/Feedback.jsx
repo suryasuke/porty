@@ -3,11 +3,14 @@ import '../Feedback/Feedback.css';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import FaceIcon from '@mui/icons-material/Face';
+import Face3Icon from '@mui/icons-material/Face3';
 
 function Feedback(props) {
   const [win , setwin] = useState();
   const [drag, setDrag] = useState(false);
   const [submitteds , setsubmit] = useState(false);
+  const [Animated , setAnimation] = useState(false);
   const [likes, setLikes] = useState(()=>{
     const prevLike = localStorage.getItem('likes');
     try{
@@ -115,10 +118,14 @@ function Feedback(props) {
 
   console.log("win" , win)
 
+  note.map((item) => (
+    console.log(item.Gender === 'male')
+  ))
+
   return (
     <div>
-      <div className='whole-contain'>1w
-        {submitteds && <div id='thank'><h4>Your form submitted !!!</h4></div> }
+      <div className='whole-contain'>
+        {submitteds && <div id='thank'><p>Your form submitted , please check you spam mail</p></div> }
         <div className={`login-container ${drag ? 'draged' : ''}`}>
           <div className='title-contains'>
             <h1>Feedback</h1>
@@ -162,7 +169,7 @@ function Feedback(props) {
                 name="content"
                 id="text-area"
               ></textarea>
-              <input className="btn" type='submit' value="Submit" />
+              <button className={`btn submit-feed-btn ${Animated ? 'animated' : ''}`} onMouseEnter={()=>setAnimation(true)} onMouseLeave = {()=> setAnimation(false)}>Submit</button>
             </form>
           )}
         </div>
@@ -180,8 +187,7 @@ function Feedback(props) {
               <div className="feedbacks">
                 <div className='feed-title'>
                   <div id='abso'>
-                 
-                  <h2>{item.name.slice(0, 1).toUpperCase()}</h2>
+                  <h2>{item.gender==="male" ? <FaceIcon/> : item.Gender==="male" ? <Face3Icon/> : ''}</h2>
                   <h3>{item.name}</h3>
                
                    </div>
@@ -191,7 +197,7 @@ function Feedback(props) {
                     {likes[item.id] ? <FavoriteIcon style={{ color: 'red' }} /> : <FavoriteBorderIcon style={{ color: 'red' }} />}
                     <p className='counts'>{count[item.id] ? count[item.id] : 0}</p>
                   </p>
-                <p style={{ marginBottom: '15px' }}>{item.content}</p>
+                <p className='content'>{item.content}</p>
                 <p className="timestamp">{getRelativeTime(item.timestamp)}</p>
               </div>
             </div>
@@ -202,9 +208,20 @@ function Feedback(props) {
           ))
         ) : (
           <p id='no-feed'>No feedback yet.</p>
-        )}
+        )
+       
+        }
+         {win && 
+        <div className="scroll-effect">
+  <div className="scroll-to-top-wrapper">
+    <div className="rotating-border"></div>
+    <button onClick={scrollToTop} className="scroll-to-top-btn">
+      <span className="Span-icon" ><KeyboardArrowUpIcon /></span>
+    </button>
+  </div>
+</div>}
       </div>
-      {win && <button onClick={scrollToTop} className="scroll-to-top-btn"><KeyboardArrowUpIcon/></button>}
+     
     </div>
   );
 }

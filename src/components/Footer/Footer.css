@@ -7,34 +7,102 @@
     transform: scale(1.4);
 }
 .footer{
-    color: rgb(0, 0, 0);
+    color: rgb(94, 94, 94);
     margin-top: 80px;
-    background-color:  rgb(255, 255, 255);
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 0;
-
-    height: 200px;
+    background-color:  transparent;
+    width: 70%;
+    position: relative;
+    left: 15.1%;
+    border-top: 4px solid black;
+    border-left:4px solid black;
+    border-right: 4px solid black ;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    border-radius: 10px;
+    margin-top: 8%;
+    height: 220px;
     opacity: 0.7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.dark-mode .footer{
+border-top: 4px solid rgb(255, 255, 255);
+    border-left:4px solid rgb(255, 255, 255);
+    border-right: 4px solid rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+.dark-mode .footer-social-icon a{
+    color: white;
+}
+.dark-mode .footer-copyright p{
+    color: white;
+}
 .footer-copyright{
 margin: 0;
 color: black;
 }
+
+.dark-mode .footer-links{
+    color: white;
+}
 .footer-links{
     color: black;
     display: flex;
-    gap: 30px;
+    gap: 60px;
     list-style: none;
     margin-right: 40px;
+    font-weight: 500;
 }
 .footer-social-icon{
     display: flex;
     gap: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px){
+
+    .footer{
+        color: rgb(0, 0, 0);
+        margin-top: 30%;
+        background-color:  transparent;
+        width: 90%;
+    position: relative;
+    bottom: 0;
+    left: 4%;
+
+        border-top: 4px solid black;
+        border-left:4px solid black;
+        border-right: 4px solid black ;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        border-radius: 10px;
+        height: 220px;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-copyright{
+    margin: 0;
+    color: black;
+    }
+    .footer-links{
+        color: black;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin-right: 40px;
+    }
+    .footer-social-icon{
+        display: flex;
+        gap: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
 }

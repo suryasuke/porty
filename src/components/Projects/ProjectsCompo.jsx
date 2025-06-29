@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Projects/ProjectsCompo.css';
 import projo from '../../assets/Projo';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 function ProjectsCompo() {
   
@@ -30,7 +31,7 @@ function ProjectsCompo() {
   };
 
   return (
-    <div>
+    <div className='conatinering'>
       {projo.map((project) => {
         const isActive = selectedId === project.id && valid;
         const needed = isActive ? "Close" : 'Read more';
@@ -47,8 +48,10 @@ function ProjectsCompo() {
                   <a
                     style={{ textDecoration: 'none', color: 'rgb(233, 95, 53)' }}
                     href={project.link}
-                  >
-                    View
+                  >{
+                               project.link  && <RemoveRedEyeIcon />
+                  }
+                    
                   </a>
                 </h3>
               </div>
@@ -56,7 +59,6 @@ function ProjectsCompo() {
               <h3
                 onClick={() => handleClick(project.id)}
                 className='read'
-                style={{ width: '100px' }}
               >
                 {needed}
               </h3>

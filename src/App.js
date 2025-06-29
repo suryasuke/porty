@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useDispatch , useSelector } from "react-redux";
 import Navbar from './components/Navbar/Navbar.jsx';
 import Overview from './Pages/Overview.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -10,15 +11,28 @@ import axios from 'axios';
 import PathCompo from "../src/components/PathCompo.jsx";
 import '../src/App.css';
 import DangerousRoundedIcon from '@mui/icons-material/DangerousRounded';
+import CloseIcon from '@mui/icons-material/Close';
+import { ChangePorfileView } from "./components/redux/profileViewToggle.js";
+import logo from './assets/logof.jpg' 
+
+
+
+
 
 
 function App() {
     
 
+ const value  = useSelector((state) => state.profileView.toggle)
+ const toggle = useSelector((state => state.toggle.toggle)) 
+ const dispatch = useDispatch();
+ console.log( "profile value"  , value);
 
+ console.log("dark mode and light mode toggle " , toggle) ; 
+ 
   const [done , setdone] = useState(()=>{
     const savedValue = localStorage.getItem('done');
-    return savedValue ? JSON.parse(savedValue) : true ; 
+    return savedValue ? JSON.parse(savedValue) : false; 
   });
   const [currentPath , setpath]=  useState (''); 
   const [notes, setNotes] = useState([]);
@@ -37,6 +51,12 @@ function App() {
     };
       fetchNotes();
   }, []);
+
+
+
+  const handleclick = ()=>{
+      dispatch(ChangePorfileView());
+    }
 
 
 
@@ -88,13 +108,14 @@ function App() {
       const timestamp = new Date().toISOString();
       const newNote = { value , timestamp };
     console.log('mail' , value.email);
+
+
       await axios.post(API_URL, newNote);
+
+      
       const response = await axios.get(API_URL);
-     
-
-
-
       setNotes(response.data);
+      
     } catch (error) {
       console.error("Error inserting note:", error);
     }
@@ -107,9 +128,11 @@ function App() {
   const bgda = done ? 'doned' : ''  ; 
   
   return (
-    <div>
-       <div className={bgda}>
+    <div className={done || value ? `overflow-ah` : ''}>
+       <div className= {`${bgda} ${done || value ? `non-intract` : ''}`} >
+     
  <BrowserRouter>
+ 
       <Navbar currentPath={currentPath}/>
       <PathCompo onpathChange={setpath}/> 
       <Routes>
@@ -152,6 +175,28 @@ function App() {
   : ''
   
   }  
+
+
+  {
+    value ? 
+    <>
+    <div className="profile-overlay ">
+      <div className="Profile-container">
+    
+        <div   className="wrong-In-Profie">
+<div className="icon-wrong"><CloseIcon onClick={()=>{handleclick()}} style={{color : 'white'}} /></div>
+        </div>
+
+        <div className="piclogo">
+          <img src={logo} alt="logo-pic"/>
+        </div>
+        
+    </div> 
+    </div>
+    
+    
+    </> : ''
+  }
 
 
     </div>

@@ -1,51 +1,54 @@
-import React from 'react'
-import './Hero.css' ;
+import React from 'react';
+import './Hero.css';
 
-import file from '../../assets/Resume.pdf'
+import file from '../../assets/Resume.pdf';
 import { Experience } from '../Experience';
 import { Canvas } from "@react-three/fiber";
 
-const hero = () => {
+
+const Hero = () => {
 
   return (
-<>
-<div className='whole-contain'>
+    <>
+      <div className='whole-contain'>
+        <div className='hero'>
+          <div className="hero-left">
+            <div className='names'>
+            <h2>Hey Welcome i'm<span>surya</span></h2>
+              <p>
+                I'm a <span>Java & PERN stack</span> developer specializing in <span> PostgreSQL</span> ,<span> Express.js</span> ,<span>React</span> , <br />
+                and <span>Node.js</span>. I create scalable, high-performance web apps with a focus on clean code. <br />
+                Passionate about tackling challenges and staying updated with the latest technologies. <br />
+                My knowledge in full stack.
+              </p>
+            </div>
+            <div className="hero-latest-btn">
+              <a href={file} download="surya_resume">
+                <div>Download Resume</div>
+              </a>
+            </div>
+          </div>
 
- <div className='hero'>
-<div className="hero-left">
-<div className='names'>
-  <h2>Hey Welcome I'm <span>SURYA S</span></h2>
-  <p>I'm a MERN stack developer specializing in PostgreSQL, Express.js, React, <br></br>
-    and Node.js.I create scalable, high-performance web apps with a focus on clean code. <br></br> 
-    Passionate about tackling challenges and staying updated with the latest technologies<br></br> my knowledge in full satck</p>
-    
-</div>
-<div className="hero-latest-btn">
-<a href={file} download="surya resume"><div>Download Resume</div></a>
-   
-</div>
-</div>
+          <div className="hero-right">
+            <Canvas
+              shadows
+              camera={{ position: [0, 2, 5], fov: 30 }}
+              style={{
+                borderRadius: '30px',
+                height: '400px',
+                width: '350px',
+                backgroundColor: 'none',
+                marginBottom: "30px"
+              }}
+            >
+              <color attach="background" args={["transparent"]} />
+              <Experience />
+            </Canvas>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-<div className="hero-right">
-
-
-
-</div>
-<Canvas
-  shadows
-  camera={{ position: [0, 2, 5], fov: 30 }}
-  style={{ width: '600px', backgroundColor: 'transparent'  , marginBottom:"30px"}} 
->
-  <color attach="background" args={["transparent"]} />  
-  <Experience />
-</Canvas>
-
-</div>
-
-</div>
-</>
-
-   
-  )
-}
-export default hero ;
+export default Hero;

@@ -1,22 +1,29 @@
 .proj-container{
-background-color: white;
+background-color: transparent;
 width: 80%;
 height: 180px;
-border-radius: 30px;
-border-top-left-radius: 0px ;
+border-radius: 10px;
+border: 1px solid rgb(233, 95, 53) ; 
+box-shadow: 0 2px 10px rgb(233, 95, 53);
 position: relative;
-top: 10px;
+top: 80px;
 left: 140px;
 margin-top: 50px;
 margin-bottom: 40px;
 padding: 5px 25px 15px 25px; 
 display: flex;
 flex-direction: column;
+font-family: "Montserrat", sans-serif;
+    font-style: normal;
 gap: 5px;
-transition: height 0.3s ;
-animation: seeda 1s linear;
+
+animation: seeda 500ms linear;
 animation-timeline: view();
-animation-range: entry 0  cover 20%;
+animation-range: entry 0  cover 25%;
+}
+
+.view h2{
+  font-weight: 500;
 }
 
 
@@ -64,4 +71,64 @@ animation-range: entry 0  cover 20%;
 .read{
     color: rgb(233, 95, 53);
     user-select: none;
+    width: 150px;
 }
+
+@media screen and (max-width: 768px) {
+    .proj-container {
+      width: 80%;
+      margin-left: -126.5px;
+      padding-left: 20px;
+     
+        margin-right: 0px;
+      height: auto;
+      margin-bottom: 30px;
+      
+      transition: height auto 1s linear;
+     
+     
+    }
+    .containering{
+        width: 100%;
+        padding-right: 0px;
+        margin-top: 30%;
+    }
+  
+    .active {
+      height: auto;
+      transition: height auto 1s linear;
+    }
+  
+    .title-contain img {
+      width: 25px;
+      height: 25px;
+      top: 8px;
+      left: 10px;
+    }
+  
+    .title-contain h2 {
+      font-size: 1.1rem;
+      margin-top: 11px;
+    }
+  
+    .view {
+      flex-direction: row;
+      
+      gap: 5px;
+      text-align: center;
+    }
+  
+    .view h3 {
+      margin-top: 16px;
+      width: auto;
+    }
+    .view a{
+margin-top: -10px;
+font-size: 16px;
+    }
+    .read {
+      width: auto;
+      font-size: 0.95rem;
+    }
+  }
+  
