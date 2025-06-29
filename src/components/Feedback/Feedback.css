@@ -411,6 +411,13 @@ option:focus{
     margin-top : 18px ; 
 }
 
+    .dark-mode timestamp{
+        color :  rgb(233, 95, 53) ; 
+}
+ .dark-mode .content{
+        color :  rgb(233, 95, 53) ; 
+}
+
 @media screen and (max-width: 768px) {
     .login-container {
       width: 85%;
