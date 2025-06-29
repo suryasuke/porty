@@ -1,7 +1,7 @@
 
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 import { useGraph } from '@react-three/fiber'
-import { useAnimations, useFBX, useGLTF } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { SkeletonUtils } from 'three-stdlib'
 
 export function Avatar(props) {
