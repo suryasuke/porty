@@ -10,7 +10,7 @@ export function Avatar(props) {
  
   useEffect(()=>{
   actions["Typing"].reset().play();
-  },[]);
+  },[actions]);
 
   const group = useRef();
   const { scene } = useGLTF('models/6858260d2ceb66a679a1c816.glb');
