@@ -36,7 +36,7 @@ function App() {
   });
   const [currentPath , setpath]=  useState (''); 
   const [notes, setNotes] = useState([]);
-  const API_URL = "http://localhost:3000/content";
+  const API_URL = "https://porty-8hk0.onrender.com";
 
 
 
