@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://portfolio-surya-devo.netlify.app'], 
+  origin: ['http://localhost:3000', 'https://suryachronicle.netlify.app'], 
   methods: ['GET', 'POST'],
   credentials: true
 }));
