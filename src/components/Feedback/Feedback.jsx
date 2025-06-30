@@ -43,7 +43,10 @@ function Feedback(props) {
 
   const getRelativeTime = (timestamp) => {
     const now = new Date();
-    const then = new Date(timestamp);
+    const utcDate = new Date(timestamp);
+  
+  const localOffset = utcDate.getTimezoneOffset() * 60000;
+  const then = new Date(utcDate.getTime() - localOffset);
     const seconds = Math.floor((now - then) / 1000);
 
     if (seconds < 60) return `${seconds} second${seconds !== 1 ? 's' : ''} ago`;
