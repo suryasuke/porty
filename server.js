@@ -33,11 +33,11 @@ const db = new pg.Client({
 
 
 db.connect().catch(err => {
-  console.error('❌ Failed to connect to the database:', err.stack);
+  console.error("Failed to connect to the database:", err.stack);
 });
 
 const result = await db.query("SELECT current_database()");
-console.log("✅ Connected to DB:", result.rows[0].current_database);
+console.log("Connected to DB:", result.rows[0].current_database);
 
 
 app.get('/content', async (req, res) => {
@@ -45,7 +45,7 @@ app.get('/content', async (req, res) => {
     const result = await db.query("SELECT * FROM details");
     res.json(result.rows);
   } catch (err) {
-    console.error("❌ Error fetching notes:", err);
+    console.error("Error fetching notes:", err);
     res.status(500).json({ message: "error in fetch" });
   }
 });
@@ -96,21 +96,21 @@ app.post('/content', async (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) console.error('Email error:', error);
-      else console.log('✅ Email sent:', info.response);
+      else console.log('Email sent:', info.response);
     });
 
   } catch (err) {
-    console.error("❌ Error inserting note:", err);
+    console.error("Error inserting note:", err);
     res.status(500).json({ message: "error in insert" });
   }
 });
 
 
 app.use((err, req, res, next) => {
-  console.error('❌ Global error handler:', err.stack);
+  console.error('Global error handler:', err.stack);
   res.status(500).json({ message: 'Something went wrong!' });
 });
 
 app.listen(port, () => {
-  console.log(`✅ Server running on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });
