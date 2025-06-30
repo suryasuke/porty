@@ -1,14 +1,16 @@
 
-import pg from 'pg';
+
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 dotenv.config();
+import { createClient } from '@supabase/supabase-js'
 
 
-const {Client} = pg;
+
+
 const app = express();
 const port = process.env.PORT || 3000; 
 
@@ -24,13 +26,16 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 
-const db = new pg.Client({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false,
-  },
-});
+// const db = new pg.Client({
+//   connectionString: process.env.DATABASE_URL,
+//   ssl: {
+//     rejectUnauthorized: false,
+//   },
+// });
 
+const supabaseUrl = 'https://weoyrrotpitpvzuxayzd.supabase.co' ; 
+const supabaseKey = process.env.SUPABASE_KEY ; 
+const db = createClient(supabaseUrl, supabaseKey) ; 
 
 db.connect().catch(err => {
   console.error("Failed to connect to the database:", err.stack);
