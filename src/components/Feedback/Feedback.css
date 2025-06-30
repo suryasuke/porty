@@ -45,6 +45,7 @@
     font-weight: 300;
 align-items: center;
 position: absolute;
+    z-index : 999999 ; 
 top: 40px;
 left: 36%;
 }
