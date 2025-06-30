@@ -66,6 +66,9 @@ left: 36%;
     height: 380px;
     transition: height 155ms ease;
 }
+    .dark-mode .feedbacks p{
+        color : rgb(233, 95, 53) ; 
+}
 
 select{
 
