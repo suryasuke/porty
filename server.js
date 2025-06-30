@@ -76,7 +76,7 @@ app.post('/content', async (req, res) => {
       service: 'gmail',
       auth: {
         user: process.env.EMAIL,
-        pass: process.env.PASS,
+        pass: "zmlc dsiv ibxc bhwg",
       },
     });
 
