@@ -37,37 +37,41 @@ const supabaseUrl = 'https://weoyrrotpitpvzuxayzd.supabase.co' ;
 const supabaseKey = process.env.SUPABASE_KEY ; 
 const db = createClient(supabaseUrl, supabaseKey) ; 
 
-db.connect().catch(err => {
-  console.error("Failed to connect to the database:", err.stack);
-});
-
-const result = await db.query("SELECT current_database()");
-console.log("Connected to DB:", result.rows[0].current_database);
-
-
 app.get('/content', async (req, res) => {
   try {
-    const result = await db.query("SELECT * FROM details");
-    res.json(result.rows);
+    const { data, error } = await db
+      .from('details')
+      .select('*');
+
+    if (error) throw error;
+    res.json(data);
   } catch (err) {
-    console.error("Error fetching notes:", err);
+    console.error("Error fetching notes:", err.message);
     res.status(500).json({ message: "error in fetch" });
   }
 });
+
 
 
 app.post('/content', async (req, res) => {
   const { value, timestamp } = req.body;
 
   try {
-    const result = await db.query(
-      'INSERT INTO details (name, content, timestamp, gender, mail) VALUES ($1, $2, $3, $4, $5) RETURNING *',
-      [value.username, value.content, timestamp, value.Gender, value.email]
-    );
+    const { data, error } = await db
+      .from('details')
+      .insert([{
+        name: value.username,
+        content: value.content,
+        timestamp: timestamp,
+        gender: value.Gender,
+        mail: value.email,
+      }])
+      .select();
 
-    res.json(result.rows[0]);
+    if (error) throw error;
+    res.json(data[0]);
 
-    
+    // Send email
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -105,7 +109,7 @@ app.post('/content', async (req, res) => {
     });
 
   } catch (err) {
-    console.error("Error inserting note:", err);
+    console.error("Error inserting note:", err.message);
     res.status(500).json({ message: "error in insert" });
   }
 });
