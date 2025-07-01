@@ -5,8 +5,9 @@
 .footer-icons-container:hover a span{
     
     transition: 200ms;
-    transform: scale(0.432);
+    transform: scale(0.532);
     color: red;
+    
 }
 
 .footer{
