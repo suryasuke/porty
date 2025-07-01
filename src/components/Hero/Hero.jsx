@@ -14,7 +14,7 @@ const Hero = () => {
         <div className='hero'>
           <div className="hero-left">
             <div className='names'>
-            <h2>Hey Welcome i'm<span>surya</span></h2>
+            <h2>Hey Welcome i'm<span>SURYA S</span></h2>
               <p>
                 I'm a <span>Java & PERN stack</span> developer specializing in <span> PostgreSQL</span> ,<span> Express.js</span> ,<span>React</span> , <br />
                 and <span>Node.js</span>. I create scalable, high-performance web apps with a focus on clean code. <br />
