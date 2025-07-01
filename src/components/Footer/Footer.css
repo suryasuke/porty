@@ -1,11 +1,14 @@
 .footer-icons-container a{
     color: rgb(0, 0, 0);
 }
-.footer-icons-container:hover a {
-    color: rgb(0, 0, 0);
-    transition: 1ms;
-    transform: scale(1.4);
+
+.footer-icons-container:hover a span{
+    
+    transition: 200ms;
+    transform: scale(0.432);
+    color: red;
 }
+
 .footer{
     color: rgb(94, 94, 94);
     margin-top: 80px;
@@ -70,10 +73,9 @@ color: black;
         margin-top: 30%;
         background-color:  transparent;
         width: 90%;
-    position: relative;
-    bottom: 0;
-    left: 4%;
-
+        position: relative;
+        bottom: 0;
+        left: 4%;
         border-top: 4px solid black;
         border-left:4px solid black;
         border-right: 4px solid black ;
