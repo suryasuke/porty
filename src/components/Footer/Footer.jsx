@@ -21,18 +21,18 @@ export const Footer = () => {
             </ul>
             <div className='footer-social-icon'>
                  <div className='footer-icons-container'>
-                  <a href='https://www.instagram.com/surya_____sol/'><InstagramIcon color='black'/></a>
+                  <a href='https://www.instagram.com/surya_____sol/'><span><InstagramIcon color='black'/></span></a>
                     
                  </div>
                  <div className='footer-icons-container'>
-                 <a href={`https://wa.me/8110974040?text=${data.content}`}> <WhatsAppIcon color='black'/></a>  
+                 <a href={`https://wa.me/8110974040?text=${data.content}`}> <span><WhatsAppIcon color='black'/></span></a>  
                  
                  </div>
                  <div  className='footer-icons-container'>  
-                           <a href={`www.linkedin.com/in/surya-s-99b922272`}> <LinkedInIcon color='black'/></a> 
+                           <a href={`www.linkedin.com/in/surya-s-99b922272`}><span><LinkedInIcon color='black'/></span> </a> 
                  </div>
                   <div  className='footer-icons-container'>  
-                           <a href={`https://github.com/suryasuke/`}> <GitHubIcon color='black'/></a> 
+                           <a href={`https://github.com/suryasuke/`}> <span><GitHubIcon color='black'/></span></a> 
                  </div>
             </div>
             <div className='footer-copyright'>
