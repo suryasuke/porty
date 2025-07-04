@@ -71,15 +71,13 @@ color: black;
 
     .footer{
         color: rgb(0, 0, 0);
-        margin-top: 30%;
+        margin-top: 40%;
         background-color:  transparent;
         width: 90%;
         position: relative;
         bottom: 0;
         left: 4%;
-        border-top: 4px solid black;
-        border-left:4px solid black;
-        border-right: 4px solid black ;
+        border: 10px 2px;
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         border-radius: 10px;
@@ -94,12 +92,19 @@ color: black;
     margin: 0;
     color: black;
     }
+    .footer-copyright{
+        text-align: center;
+    }
+    .light-mode .footer-copyright p{
+        color: black;
+    }
     .footer-links{
         color: black;
         display: flex;
-        gap: 20px;
+        gap: 15px;
         list-style: none;
         margin-right: 40px;
+        font-size: 15px;
     }
     .footer-social-icon{
         display: flex;

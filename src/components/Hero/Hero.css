@@ -127,6 +127,9 @@
       color: black;
       text-wrap:wrap;
     }
+    .names span{
+      color: rgb(166, 14, 166);
+    }
   
     .names img {
       width: 25px;
@@ -139,10 +142,24 @@
       margin-top: 20px;
       text-align: center;
       padding-top:17px;
+      background-color: rgb(140, 37, 140);
     }
       
     .hero-latest-btn a{
     margin-top: 10px;
+    }
+   .hero-left .hero-latest-btn:hover{
+      color: rgb(128, 29, 128);
+      border: 2px solid rgb(128, 29, 128);
+      background-color: transparent;
+      box-shadow: 0 0 7px violet;
+    }
+    .hero-latest-btn:hover .anchor{
+      color: rgb(128, 29, 128);
+    }
+    .hero-latest-btn .anchor:hover
+    {
+      color: rgb(128, 29, 128);
     }
   
     .hero-right {

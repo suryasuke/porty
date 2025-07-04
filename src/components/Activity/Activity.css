@@ -257,7 +257,7 @@ animation-delay: 4s;
         content: '';
         width: 3px;
         height: 125%;
-        background: rgb(159, 159, 159);
+        background: rgb(247, 214, 254);
         top: 0;
         left: 9%;
         margin-left: -3px;
@@ -269,12 +269,12 @@ animation-delay: 4s;
         width: 0;
         position: absolute;
         top: 10px;
-        z-index: 5;
+        z-index: -1;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
-        border-right:15px solid rgb(255, 255, 255) ;
+        border-right:15px solid rgb(146, 4, 141) ;
        
-        left: -14px;
+        left: -15px;
     }
     .left-arrow{
         height: 0;
@@ -284,9 +284,12 @@ animation-delay: 4s;
         z-index: 5;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
-        border-right:15px solid rgb(255, 255, 255) ;
+        border-right:15px solid rgb(152, 13, 150) ;
         border-left: 0px;
-        left: -14px;
+        left: -15px;
+    }
+    .imgsz{
+        left: -4%;
     }
     .right-container{
         left: 2%;
@@ -313,24 +316,28 @@ animation-delay: 4s;
       width: 80%;
        max-height: auto;
         border-radius: 5px;
-        border: 0px solid rgb(233, 95, 53);
+        border: 1px solid  rgb(159, 0, 154);
         padding-bottom: 5px;
+        box-shadow: 0 0 4px rgb(154, 2, 154);
         
-        
-       }
+    }
+       .text-box .tb h1{
+        color: rgb(150, 0, 150);
+        font-family:'Times New Roman', Times, serif;
+    }
     .icons img{
         position : absolute  ;
         width: 80px;
         height: 80px; 
         
         right : 84.5% ;
-         top: 18px ;
-          z-index:10
+        top: 18px ;
+        z-index:10
     }
    
     .ni{
         position :absolute;
-         left :-4%;
+         left :-3%;
          margin-top: -1px;
          z-index:10
     }
@@ -339,7 +346,7 @@ animation-delay: 4s;
         width: 7px;
         position: absolute; 
         margin-right: 3.0px;
-        right: 89.5%;
+        right: 87.6%;
         top: 100px;
         opacity: 0;
         background-color:rgb(255, 255, 255);
@@ -371,7 +378,7 @@ animation-delay: 4s;
         position : absolute  ;
         width: 70px;
         height: 70px; 
-        
+        left: -3.5%;
         
           z-index:10
     }
