@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../Projects/ProjectsCompo.css';
 import projo from '../../assets/Projo';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 function ProjectsCompo() {
   
@@ -46,7 +48,7 @@ function ProjectsCompo() {
                 <h2>{project.name} <img src={project.src} alt='' /></h2>
                 <h3>
                   <a
-                    style={{ textDecoration: 'none', color: 'rgb(233, 95, 53)' }}
+                    style={{ textDecoration: 'none' }}
                     href={project.link}
                   >{
                                project.link  && <RemoveRedEyeIcon />
@@ -60,7 +62,7 @@ function ProjectsCompo() {
                 onClick={() => handleClick(project.id)}
                 className='read'
               >
-                {needed}
+                {needed}  {needed === 'Read more' ? <ArrowDropDownIcon/> : <ArrowDropUpIcon/>}
               </h3>
               {isActive && (
                 <p>

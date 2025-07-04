@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
             <div className="hero-latest-btn">
               <a href={file} download="surya_resume">
-                <div>Download Resume</div>
+                <div className='anchor'>Download Resume</div>
               </a>
             </div>
           </div>

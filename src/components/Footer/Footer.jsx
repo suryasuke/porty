@@ -1,9 +1,6 @@
 import React from 'react'
 import './Footer.css'
 import data from '../../assets/data'
-
-
-
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

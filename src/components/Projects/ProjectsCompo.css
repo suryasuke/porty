@@ -71,20 +71,26 @@ animation-range: entry 0  cover 25%;
 .read{
     color: rgb(233, 95, 53);
     user-select: none;
+    display: flex;
+    align-items: center;
     width: 150px;
 }
+ .title-contain h3 a{
+      color : rgb(233, 95, 53);
+    }
 
 @media screen and (max-width: 768px) {
     .proj-container {
       width: 80%;
       margin-left: -126.5px;
       padding-left: 20px;
-     
-        margin-right: 0px;
+      border-radius: 8px;
+      margin-right: 0px;
       height: auto;
       margin-bottom: 30px;
-      
-      transition: height auto 1s linear;
+     box-shadow: 0 0 10px violet;
+      border: 1px solid rgb(130, 3, 130);
+      transition: height 1s linear;
      
      
     }
@@ -96,7 +102,7 @@ animation-range: entry 0  cover 25%;
   
     .active {
       height: auto;
-      transition: height auto 1s linear;
+      transition: height 1s linear;
     }
   
     .title-contain img {
@@ -105,10 +111,27 @@ animation-range: entry 0  cover 25%;
       top: 8px;
       left: 10px;
     }
-  
+
+   .read{
+     display: flex;
+     align-items: center;
+     color: rgb(130, 3, 130);
+   }
+
     .title-contain h2 {
       font-size: 1.1rem;
       margin-top: 11px;
+      margin-left: 0px;
+      text-align: start;
+    }
+    .title-contain h3 a{
+      color: rgb(120, 5, 120);
+    }
+    .title-contain p{
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      text-align:left;
+      margin-left: 0px;
     }
   
     .view {
