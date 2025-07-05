@@ -562,7 +562,9 @@ option:focus{
 
     #feedbacks{
       display: flex;
-      justify-content: center
+      justify-content: center;
+      width: 85%;
+      height: 100px;
     }
   
     .scroll-to-top-btn {
