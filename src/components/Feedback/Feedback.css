@@ -504,6 +504,9 @@ option:focus{
       animation: orangeToViolet 500ms forwards;
       
     }
+    .feedbacks p{
+      color: #94148a;
+    }
     .btn:hover{
       animation: orangeToViolet2 500ms forwards;
     }
@@ -567,8 +570,8 @@ option:focus{
   
   
     .feedbacks h2 {
-      
-     color: #860d8f;
+      background-color: #94148a;
+     color: #ffffff;
       font-size: 16px;
       display: flex;
       justify-content: center;
