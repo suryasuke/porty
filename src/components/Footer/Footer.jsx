@@ -26,7 +26,7 @@ export const Footer = () => {
                  
                  </div>
                  <div  className='footer-icons-container'>  
-                           <a href={`www.linkedin.com/in/surya-s-99b922272`}><span><LinkedInIcon color='black'/></span> </a> 
+                           <a href={`https://www.linkedin.com/in/surya-s-99b922272`}><span><LinkedInIcon color='black'/></span> </a> 
                  </div>
                   <div  className='footer-icons-container'>  
                            <a href={`https://github.com/suryasuke/`}> <span><GitHubIcon color='black'/></span></a> 
