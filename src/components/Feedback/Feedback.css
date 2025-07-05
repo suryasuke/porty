@@ -568,9 +568,9 @@ option:focus{
       
     }
     .rotating-border{
-      position: fixed;
-    top: 92.4%;
-    left: 3.3%;
+    position: fixed;
+    top: 82.4%;
+    left: 2.5%;
     width: 40px;
     height: 40px;
     margin-left: 10px;
@@ -605,7 +605,7 @@ option:focus{
         width: 40px;
         color: #860d8f;
         font-size: 18px;
-        top: 92.7%;
+        top: 82.7%;
         border-radius: 50%;
         z-index: 9999;
     }
