@@ -125,7 +125,8 @@
     .names p {
       font-size: 16px;
       color: black;
-      text-wrap:wrap;
+      text-align: center;
+        line-height: 25px;
     }
     .names span{
       color: rgb(166, 14, 166);

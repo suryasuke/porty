@@ -29,8 +29,9 @@ function Skills() {
   return (
     <div className='container' >
       <div className='title'>
+        
         <div className='skill'>
-          <h1 >SKILLS</h1>
+         <h1 >SKILLS</h1>
         </div>
       </div>
       <div className='prev' onClick={prevImage}>
