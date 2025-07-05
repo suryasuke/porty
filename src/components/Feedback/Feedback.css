@@ -559,6 +559,11 @@ option:focus{
       justify-content: center;
       align-items: center;
     }
+
+    #feedbacks{
+      display: flex;
+      justify-content: center
+    }
   
     .scroll-to-top-btn {
       position: fixed;
@@ -591,7 +596,10 @@ option:focus{
       font-size: 16px;
     
     }
-  
+    #no-feed{
+       left: -33%;
+    }
+    
     .title-contains {
       flex-direction: row;
       align-items: flex-start;
@@ -648,7 +656,6 @@ color: #ffffff;
         position: relative;
         top: 70px;
         max-height: 100%;
-        left: -23%;
         margin-bottom: 70px;
         
     }
