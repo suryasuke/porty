@@ -121,10 +121,10 @@ app.delete("/delete/:id" , async (req,res)=>{
   try{
      const person = await db('details')
     .where({ id })
-    .select()
+    .first()
 
     if(!person){
-      res.status(500).json({message :`cannot find the user in user id ${ id }`
+      return res.status(500).json({message :`cannot find the user in user id ${ id }`
       })
     }
 
