@@ -7,13 +7,13 @@ import { Provider, useSelector } from 'react-redux';
 import store from './components/redux/store.js';
 import { useEffect } from 'react';
 
-// Move this component inside the Provider
+
 function RootWrapper() {
   const toggle = useSelector((state) => state.toggle.toggle);
 
   useEffect(() => {
     document.body.style.backgroundColor = toggle ? '#ffffff' : '#000000';
-    document.body.style.color = toggle ? '#000000' : '#ffffff'; // fix: contrast
+    document.body.style.color = toggle ? '#000000' : '#ffffff'; 
   }, [toggle]);
 
   return (

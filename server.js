@@ -1,14 +1,14 @@
-
-
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-dotenv.config();
 import { createClient } from '@supabase/supabase-js'
 
 
+
+
+dotenv.config();
 
 
 const app = express();
@@ -54,8 +54,8 @@ app.get('/content', async (req, res) => {
 
 
 app.post('/content', async (req, res) => {
-  const { value, timestamp } = req.body;
 
+  const { value, timestamp } = req.body;
   try {
     const { data, error } = await db
       .from('details')
@@ -114,6 +114,31 @@ app.post('/content', async (req, res) => {
   }
 });
 
+
+app.delete("/delete/:id" , async (req,res)=>{
+
+  const {id} = req.params ; 
+  try{
+     const person = await db('details')
+    .where({ id })
+    .first()
+
+    if(!person){
+      res.status(500).json({message :`cannot find the user in user id ${id}`
+      })
+    }
+
+    await db('details').where({ id : person.id }).del() ;
+
+   res.status(200).json({message : `${id} is deleted and name of the person is ${person.name}`}); 
+   }
+   catch(err){
+
+    res.status(500).json({message : `Cannot able to delete the ${id}`})
+
+  }
+
+})
 
 app.use((err, req, res, next) => {
   console.error('Global error handler:', err.stack);

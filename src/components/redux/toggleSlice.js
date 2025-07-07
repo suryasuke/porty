@@ -15,7 +15,7 @@ reducers :{
 
 })
 
-  export const { toggleUp } = createslice.actions
-  export default createslice.reducer;
+export const { toggleUp } = createslice.actions
+export default createslice.reducer;
 
  
