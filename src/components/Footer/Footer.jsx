@@ -46,7 +46,7 @@ export const Footer = () => {
              hoverIntensity={0.5} 
              enableHover={true}
              clickEffect={true}
-             fontSize='50px'
+             fontSize='25px'
              className='developedby'
             >
               Developed by
