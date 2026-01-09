@@ -12,12 +12,11 @@
     color:   rgb(233, 95, 53);
     padding: 30px ;
     padding-top: 2px;
-    
-  
-    font-family: "Hind", sans-serif;
+
+    font-family: "poppins";
     font-style: normal;
     font-weight: 400;
-   border-radius: 7px;
+   border-radius: 0px;
    margin-bottom: 80px;
    margin-top: 60px;
   
@@ -40,7 +39,7 @@
  padding-bottom: 5px;
     display: flex;
     justify-content: center ;
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins";
     font-style: normal;
     font-weight: 300;
 align-items: center;
@@ -51,13 +50,19 @@ left: 36%;
 }
 .dark-mode .title-contains h1{
   color: rgb(233, 95, 53);
+ 
+    font-size: 24px;
+    font-weight: 600;
 }
 .title-contains{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-   margin-top: 15px;
+   margin-top: 12px;
+}
+.dark-mode .title-contains{
+  margin-top: 12px;
 }
 .submit-feed-btn{
   margin-top: 20px;
@@ -77,7 +82,7 @@ select{
     position: relative;
     border: none;
     border: 1px solid rgb(233, 95, 53);
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins";
     font-style: normal;
     color: rgb(0, 0, 0);
     background-color: transparent;
@@ -143,7 +148,7 @@ select:focus {
     outline: none;
   }
   
-  /* Custom styling for the <select> element on focus */
+  
   select:focus option {
     background-color: #f1f1f1;
   }
@@ -156,7 +161,7 @@ select:focus {
 #no-feed {
 color: rgb(51, 51, 51);
 margin-left: 396px;
-font-family: "Montserrat", sans-serif;
+font-family: "poppins";
     font-style: normal;
 }
 .forms{
@@ -174,7 +179,7 @@ font-family: "Montserrat", sans-serif;
     position: relative;
     background-color: transparent;
     border: 1px solid  rgb(233, 95, 53);
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins";
     font-style: normal;
     color: rgb(0, 0, 0);
     box-shadow: 0 0 5px  rgb(233, 95, 53);
@@ -192,7 +197,7 @@ font-family: "Montserrat", sans-serif;
 }
 .forms .input1::placeholder{
     color: rgb(0, 0, 0);
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins";
     font-style: normal;
 }
 .btn{
@@ -204,7 +209,7 @@ font-family: "Montserrat", sans-serif;
     margin-top: 50px;
     border: none;
     border-radius: 6px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins";
     font-style: normal;
     margin-left: 8px;
     font-size: 15px;
@@ -220,6 +225,8 @@ font-family: "Montserrat", sans-serif;
 
 .light-mode .title-contains h1{
   color: #e95f35;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 @keyframes colors {
@@ -289,7 +296,7 @@ font-family: "Montserrat", sans-serif;
 .texty{
     width: 345px;
     height: 80px;position: relative;
-   
+   font-family: "poppins";
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgb(233, 95, 53);
@@ -426,7 +433,7 @@ option:focus{
 @media screen and (max-width: 768px) {
     .login-container {
       width: 85%;
-      padding: 15px;
+      padding: 10px;
       
       box-sizing: border-box;
       height: 85px;
@@ -452,11 +459,12 @@ option:focus{
     word-wrap: break-word; 
 }
     .whole-contain{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 0px;
-      margin-right: 0px;
+              display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
   }
     #thank {
         width: 70%;
@@ -491,18 +499,21 @@ option:focus{
     .forms .input1,
     select,
     .texty {
-      width: 100%;
-      font-size: 16px;
-      padding: 10px;
-      box-sizing: border-box;
-      color: rgb(209, 129, 213);
-      border: 1px solid rgb(142, 22, 142);
-      box-shadow: 0 0 4px violet;
+     width: 100%;
+        font-size: 13px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: rgb(209, 129, 213);
+        border: 1px solid rgb(142, 22, 142);
+        box-shadow: 0 0 4px violet;
     }
 
     .btn{
       animation: orangeToViolet 500ms forwards;
       
+    }
+    .title-contains h1,p{
+      margin-top: 0px;
     }
     .feedbacks p{
       color: #94148a;
@@ -560,11 +571,13 @@ option:focus{
   
     .btn {
       width: 50%;
-      font-size: 16px;
+      font-size: 14px;
       padding: 12px;
       background-color: #860d8f;
-      margin-top: 60px;
+      margin-top: 30px;
+      font-family: "poppins";
       margin-bottom: 80px;
+      padding-top:10px ;
       
     }
     .rotating-border{
@@ -650,16 +663,15 @@ option:focus{
     }
     
     .title-contains {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 10px;
-      margin-top: 10px;
+              flex-direction: row;
+        align-items: center;
+        gap: 10px;
       
     }
   
     .title-contains h1 {
       font-size: 24px;
-      margin-top: 0px;
+    
       color: #860d8f;
     }
     .scroll-effect{
@@ -715,7 +727,7 @@ height: 45px;
         position: relative;
         top: 70px;
         max-height: 100%;
-        margin-bottom: 70px;
+        margin-bottom: 120px;
         
     }
   }

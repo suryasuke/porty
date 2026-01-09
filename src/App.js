@@ -129,17 +129,19 @@ function App() {
   
   return (
     <div className={done || value ? `overflow-ah` : ''}>
-       <div className= {`${bgda} ${done || value ? `non-intract` : ''}`} >
+       <div className= {`${bgda} ${done || value ? `non-intract` : 'app'}`} >
      
  <BrowserRouter>
  
       <Navbar currentPath={currentPath}/>
       <PathCompo onpathChange={setpath}/> 
       <Routes>
-        <Route path='/' element={<Overview />} />
+    
+ <Route path='/' element={<Overview />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/feedback' element={<Feedback onadd={inserting} note={notes} />} />
         <Route path='/activity' element={<Activity />} />
+             
       </Routes>    
       <Footer />
     </BrowserRouter>

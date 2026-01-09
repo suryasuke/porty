@@ -66,9 +66,10 @@ const activities = [
     },
     {
       image: png8,
-      title: 'Planning PG in Canada (MBA)',
-      date: '2025 - 2027',
-      desc: 'I am planning to pursue an MBA in Canada to deepen my understanding of global business, leadership, and innovation, while blending it with my tech background.',
+      title: 'Started own academy and planning for MBA',
+      date: '2025 - present',
+      desc: 'I have initiated my own academy to impart coding knowledge and am preparing to pursue an MBA to further enhance my business acumen alongside my technical skills, you can visit website here.',
+      link: 'https://www.bravedude.com/',  
       side: 'right',
     },
   ]

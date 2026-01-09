@@ -39,7 +39,8 @@ function Navbar({ currentPath }) {
   return (
     <div className={`nav-cont`}>
       <div className='navbar'>
-        <div className='nav-logo'>
+        <div className='nav-left'>
+ <div className='nav-logo'>
           <img onClick={()=> {handleclick()}} id='imgslogo' src={logo} alt='logo.png' /> 
         </div>
 
@@ -49,15 +50,17 @@ function Navbar({ currentPath }) {
 
         <div>
           <ul className={`nav-menu ${menuOpen ? 'mobile' : ''}`}>
-            <li><Link to='/' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/' ? '#e95f35' : 'inherit' }}>Overview</Link></li>
-            <li><Link to='/projects' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/projects' ? '#e95f35' : 'inherit' }}>Projects</Link></li>
-            <li><Link to='/activity' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/activity' ? '#e95f35' : 'inherit' }}>Activity</Link></li>
-            <li><Link to='/feedback' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/feedback' ? '#e95f35' : 'inherit' }}>Others</Link></li>
+            <li><Link to='/' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/' && '#e95f35' }}>Overview</Link></li>
+            <li><Link to='/projects' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/projects' && '#e95f35' }}>Projects</Link></li>
+            <li><Link to='/activity' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/activity' && '#e95f35'  }}>Activity</Link></li>
+            <li><Link to='/feedback' onClick={() => setMenuOpen(false)} style={{ textDecoration: 'none', color: Menu === '/feedback' && '#e95f35' }}>Others</Link></li>
           </ul>
         </div>
+        </div>
+       
 
         <div className='contact-btn'>
-          <a href='https://www.instagram.com/surya_____sol/'>
+          <a href='https://www.instagram.com/suryashanuh/'>
             <button className='button-org'>Fast Contact</button>
           </a>
 

@@ -6,22 +6,16 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 function ProjectsCompo() {
-  
   const [selectedId, setSelectedId] = useState(() => {
     const savedValue = localStorage.getItem('selectedId');
-    return savedValue ? JSON.parse(savedValue) : null ;
+    return savedValue ? JSON.parse(savedValue) : null;
   });
 
   const [valid, setValid] = useState(() => {
     const savedValid = localStorage.getItem('valid');
-    return savedValid && JSON.parse(savedValid);
+    return savedValid ? JSON.parse(savedValid) : false;
   });
 
-  console.log(JSON.stringify(valid))
-  console.log(JSON.parse(valid))
-  console.log(selectedId)
-
-  
   useEffect(() => {
     localStorage.setItem('selectedId', JSON.stringify(selectedId));
     localStorage.setItem('valid', JSON.stringify(valid));
@@ -33,42 +27,46 @@ function ProjectsCompo() {
   };
 
   return (
-    <div className='conatinering'>
+    <div className="conatinering">
       {projo.map((project) => {
         const isActive = selectedId === project.id && valid;
-        const needed = isActive ? "Close" : 'Read more';
+        const needed = isActive ? 'Close' : 'Read more';
 
         return (
           <div
             key={project.id}
             className={`proj-container ${isActive ? 'active' : ''}`}
           >
-            <div className='title-contain'>
-              <div className='view'>
-                <h2>{project.name} <img src={project.src} alt='' /></h2>
+            <div className="title-contain">
+              <div className="view">
+                <h2>
+                  {project.name} <img src={project.src} alt="" />
+                </h2>
                 <h3>
                   <a
                     style={{ textDecoration: 'none' }}
                     href={project.link}
-                  >{
-                               project.link  && <RemoveRedEyeIcon />
-                  }
-                    
+                  >
+                    {project.link && <RemoveRedEyeIcon />}
                   </a>
                 </h3>
               </div>
-              <p style={{userSelect : 'text'}}>{project.des}</p>
+
+              <p style={{ userSelect: 'text' }}>{project.des}</p>
+
               <h3
                 onClick={() => handleClick(project.id)}
-                className='read'
+                className="read"
               >
-                {needed}  {needed === 'Read more' ? <ArrowDropDownIcon/> : <ArrowDropUpIcon/>}
+                {needed}{' '}
+                {needed === 'Read more' ? (
+                  <ArrowDropDownIcon />
+                ) : (
+                  <ArrowDropUpIcon />
+                )}
               </h3>
-              {isActive && (
-                <p>
-                 {project.Description}
-                </p>
-              )}
+
+              {isActive && <p>{project.Description}</p>}
             </div>
           </div>
         );

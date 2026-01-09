@@ -62,11 +62,15 @@
   justify-content: center;
   align-items: center;
 }
+
 #notice{
   display: flex;
   justify-content:space-between ;
   margin: 0;
   
+}
+.app{
+  top:80px;
 }
 .contents{
   display: flex;
@@ -130,7 +134,6 @@
   cursor: pointer;
 }
 
-/* Profile picture */
 .piclogo {
   display: flex;
   justify-content: center;

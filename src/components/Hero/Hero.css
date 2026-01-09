@@ -1,11 +1,11 @@
 .hero {
-    background: white; /* Remove the white background */
+    background: white; 
     display: flex;
   
     box-shadow: 0 0 35px white;
     border: 2px solid rgb(82, 82, 82);
     border-style: dashed;
-    border-radius: 25px;
+    border-radius: 0px;
     width: 90%;
     height: auto;
     padding-right: 60px;
@@ -14,16 +14,58 @@
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
-    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+    font-family: 'Poppins';
     font-style: normal;
    
   }
+
+  /*----------------------------------*/ 
+ .hero-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.name-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+}
+.name-wrapper img{
+    position: absolute;
+    margin-left: 5px; 
+}
+
+.splash-svg {
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 130%;
+    height: auto;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.name-text {
+    position: relative;
+    z-index: 1;
+    font-weight: 800;
+    color: #111;
+    padding: 0 6px;
+}
+/*----------------------------------*/
+
   
-  .whole-contain {
+  .whole-contain-hero {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 2%;
+    margin-top: 8%;
   }
   
   .hero-left {
@@ -38,13 +80,14 @@
   }
   
   .names span {
-    color: rgb(233, 95, 53);
+    color: rgb(212, 62, 16);
     margin-left: 8px;
   }
   
   .names img {
-    width: 30px;
-    height: 30px;
+  width: 190px;
+    height: 240px;
+    opacity: 0.5;
   }
   .names h2 p span{
     color: rgb(233, 95, 53) ;
@@ -53,21 +96,29 @@
   
   .hero-left .hero-latest-btn {
     color: white;
-    background-color: #e95f35;
+    background-color: #000000;
     width: 160px;
     height: 40px;
     border: none;
-    border-radius: 7px;
+    border-radius: 0px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+    font-family: 'Poppins';
     font-style: normal;
     font-size: 14px;
     margin-top: 50px;
-    padding-top: 18px;
+    padding: 8px;
+    
   }
   
   .hero-left .hero-latest-btn:hover a {
-    color: rgb(233, 95, 53);
+    color: rgb(0, 0, 0);
   }
   
   .hero-left .hero-latest-btn a {
@@ -77,15 +128,15 @@
   }
   
   .hero-left .hero-latest-btn a div:hover {
-    color: rgb(233, 95, 53);
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   
   .hero-left .hero-latest-btn:hover {
-    border: 1px solid rgb(233, 95, 53);
-    box-shadow: 0px 0px 5px rgb(233, 95, 53);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
     background-color: transparent;
-    color: rgb(233, 95, 53);
+    color: rgb(0, 0, 0);
   }
   
   .hero-right {
@@ -96,30 +147,32 @@
   
   @media screen and (max-width: 768px) {
     .hero {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      padding: 20px;
-        border : none;
-      box-shadow: none;
-      background-color: transparent;
-      border-radius: 0;
-      margin-top: 30px;
+    flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 0;
+      
     }
   
     .hero-left {
-      margin: 20px 0 0 0;
-      width: 90%;
-      display: flex;
-        border:none;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      margin: 0px 0 0 0;
+        width: 90%;
+        display: flex;
+        border: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
   
     .names h2 {
       font-size: 35px;
       color: black;
+      margin-top: 0px;
+      
     }
   
     .names p {
@@ -130,25 +183,22 @@
     }
     .names span{
       color: rgb(166, 14, 166);
+      z-index: 0;
     }
   
     .names img {
-      width: 25px;
-      height: 25px;
-      margin-left: 5px;
+              width: 215px;
+        height: 205px;
+        margin-left: 5px;
     }
   
     .hero-left .hero-latest-btn {
       width: 60%;
       margin-top: 20px;
       text-align: center;
-      padding-top:17px;
       background-color: rgb(140, 37, 140);
     }
       
-    .hero-latest-btn a{
-    margin-top: 10px;
-    }
    .hero-left .hero-latest-btn:hover{
       color: rgb(128, 29, 128);
       border: 2px solid rgb(128, 29, 128);

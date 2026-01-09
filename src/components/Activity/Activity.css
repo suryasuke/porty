@@ -81,14 +81,14 @@ animation-delay: 4s;
     position: relative;
     width: 75%;
     max-width: 80%;
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins";
     font-style: normal;
-     
+    border-radius: 0px; 
     height: auto;
     margin-top: 16px;
     border: 1px solid  rgb(255, 255, 255);
     color: rgb(23, 23, 23);
-    box-shadow: 0 0 10px  rgb(75, 75, 75);
+    box-shadow: 0 0 5px  rgb(75, 75, 75);
 }
 .dark-mode .text-box{
          box-shadow: 0 0 10px  rgb(248, 248, 248);
@@ -102,7 +102,15 @@ animation-delay: 4s;
 .tb{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 13px;
+}
+.tb h1{
+    font-size: 23px;
+}
+.webs-link{
+    font-size: 12px;
+    color: rgb(233, 95, 53);
+    text-decoration: none;  
 }
 .dot{
     height: 8px;
@@ -264,6 +272,9 @@ animation-delay: 4s;
         z-index:-1;
         animation: moveline 8s linear forwards;
     }
+    .timeline{position: relative;
+    max-width: 1200px;
+    margin: 60px auto;}
     .right-arrow{
         height: 0;
         width: 0;
