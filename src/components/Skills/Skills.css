@@ -64,8 +64,8 @@
     width: 30%;                      
 }
   .cardsda{
-    width:208px;
-    height: 208px;
+    width:180px;
+    height: 180px;
   }
 @media screen and (max-width: 768px) {
     .skills-h1{

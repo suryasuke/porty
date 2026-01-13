@@ -1,0 +1,100 @@
+.certificate-name{
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 500;
+;
+}
+.certificate-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0);
+}
+.certificate-hr{
+    font-family: "poppins";
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 3%; 
+}   
+.certificate-hr hr {
+    width: 23%;
+    border: none;                    
+    height: 3px;                     
+    background: linear-gradient(
+        90deg,
+        rgb(233, 95, 53),
+        rgb(255, 140, 90)
+    );                               
+    margin-top: 10px;
+    border-radius: 10px;             
+    transition: all 0.3s ease-in-out;
+}
+
+.certificate-card{
+    width: 20%;
+     border: 1px solid rgb(233, 95, 53);
+        box-shadow: 0 10px 30px rgba(233, 95, 53, 0.25);
+    height: auto;
+    background-color: #2c2c2c00;  
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.certificate-img{
+    width: 100%;
+    height: auto;   
+}
+.certificate-card {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.certificate-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 0;
+}
+
+
+.certificate-card:hover::before, .certificate-name {
+    animation: fillLR 0.2s forwards ease-in-out;
+}
+.certificate-card:hover .certificate-name {
+    color: #ffffff;
+}   
+.certificate-card:hover {
+    cursor: pointer;
+    border: none;
+}
+
+
+@keyframes fillLR {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.certificate-card * {
+    position: relative;
+    z-index: 1;
+}

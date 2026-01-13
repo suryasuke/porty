@@ -2,7 +2,7 @@ import react from './Reactjs.png'
 import js from './Javascript.png'
 import nodejs from './Nodejs.png'
 import motoko from './motoko.png'
-import postman from './postman.png'
+import postman from './postman1.png'
 
 const projo =[
    {

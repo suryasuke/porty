@@ -13,7 +13,7 @@ import '../src/App.css';
 import DangerousRoundedIcon from '@mui/icons-material/DangerousRounded';
 import CloseIcon from '@mui/icons-material/Close';
 import { ChangePorfileView } from "./components/redux/profileViewToggle.js";
-import logo from './assets/logof.jpg' 
+import logo from './assets/logof.png' 
 
 
 
