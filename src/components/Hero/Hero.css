@@ -72,16 +72,17 @@
     color: rgb(0, 0, 0);
     margin-left: 100px;
     margin-top: 10px;
-    padding-top: 30px;
+    padding: 30px;
   }
   
   .names h2 {
     font-size: 37px;
+    margin-top: 0px;
   }
   
   .names span {
     color: rgb(212, 62, 16);
-    margin-left: 8px;
+   
   }
   
   .names img {

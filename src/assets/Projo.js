@@ -4,7 +4,6 @@ import nodejs from './Nodejs.png'
 import motoko from './motoko.png'
 import postman from './postman.png'
 
-
 const projo =[
    {
     id : 1 , 
@@ -57,7 +56,17 @@ const projo =[
         des : "ATS resume analyzer for getting scores of the resume commonly used by the job seekers. They can view their scores by just giving the resume to the ATS and get the score easily.Developed using grammers and advanced packages." , 
         src : react , 
         
+    },
+    {
+        id:8,
+        name: "Bravedude academy",
+        des: "Portfolio website for bravedude academy which is an educational platform for teaching web development and programming languages to the students and beginners. Developed using reactjs and threejs for 3d components." ,              
+        src : react ,   
+        link : "https://www.bravedude.com/"    
+
     }
+
+
 
 ] ; 
 export default projo ; 

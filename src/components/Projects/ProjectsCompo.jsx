@@ -30,7 +30,16 @@ function ProjectsCompo() {
     <div className="conatinering">
       {projo.map((project) => {
         const isActive = selectedId === project.id && valid;
-        const needed = isActive ? 'Close' : 'Read more';
+       const needed = isActive ? (
+  <>
+    Close <ArrowDropUpIcon />
+  </>
+) : (
+  <>
+    Read more <ArrowDropDownIcon />
+  </>
+);
+
 
         return (
           <div
@@ -58,12 +67,7 @@ function ProjectsCompo() {
                 onClick={() => handleClick(project.id)}
                 className="read"
               >
-                {needed}{' '}
-                {needed === 'Read more' ? (
-                  <ArrowDropDownIcon />
-                ) : (
-                  <ArrowDropUpIcon />
-                )}
+               {project.Description ? needed : null }
               </h3>
 
               {isActive && <p>{project.Description}</p>}

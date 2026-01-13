@@ -16,7 +16,7 @@
     position: fixed;
     padding: 0px 20px 0px 20px;
     border-radius: 55px;
-   border: 2px solid black ;
+    box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.237); 
 
   top: 3%;
   

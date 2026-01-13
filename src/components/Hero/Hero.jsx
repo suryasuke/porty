@@ -4,6 +4,7 @@ import textb from '../../assets/textb.png'
 import file from '../../assets/Resume.pdf';
 import { Experience } from '../Experience';
 import { Canvas } from "@react-three/fiber";
+import TextType from '../../ui/TextType';
 
 
 const Hero = () => {
@@ -18,7 +19,17 @@ const Hero = () => {
   Hey Welcome i'm
   <span class="name-wrapper">
     <img src={textb} alt="splash" class="splash-svg" />
-    <span class="name-text">SURYA S</span>
+    <span class="name-text">
+      <TextType 
+text={["Surya", "Coder", "FS developer", "Educator", "Business accumen", "Founder of BD"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+/>
+      </span>
+    
+
   </span>
 </h2>
               <p>

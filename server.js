@@ -87,7 +87,7 @@ app.post('/content', async (req, res) => {
             width: 100px;
             padding: 10px 0;
             font-size: 16px;
-            color: #fff;
+            color: #fff; 
             background-color: #007BFF;
             text-decoration: none;
             border-radius: 5px;

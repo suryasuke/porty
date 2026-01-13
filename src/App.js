@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useDispatch , useSelector } from "react-redux";
-import Navbar from './components/Navbar/Navbar.jsx';
 import Overview from './Pages/Overview.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Projects from './components/Projects/ProjectsCompo.jsx';
 import Feedback from './components/Feedback/Feedback.jsx';
 import Activity from './components/Activity/Activity.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';  
 import axios from 'axios';
 import PathCompo from "../src/components/PathCompo.jsx";
 import '../src/App.css';
@@ -14,9 +14,6 @@ import DangerousRoundedIcon from '@mui/icons-material/DangerousRounded';
 import CloseIcon from '@mui/icons-material/Close';
 import { ChangePorfileView } from "./components/redux/profileViewToggle.js";
 import logo from './assets/logof.jpg' 
-
-
-
 
 
 
@@ -126,17 +123,19 @@ function App() {
   })
   };
   const bgda = done ? 'doned' : ''  ; 
-  
+
+
   return (
+    
     <div className={done || value ? `overflow-ah` : ''}>
        <div className= {`${bgda} ${done || value ? `non-intract` : 'app'}`} >
-     
+
  <BrowserRouter>
- 
-      <Navbar currentPath={currentPath}/>
+
       <PathCompo onpathChange={setpath}/> 
+      <Navbar currentPath={currentPath} /> 
       <Routes>
-    
+     
  <Route path='/' element={<Overview />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/feedback' element={<Feedback onadd={inserting} note={notes} />} />
@@ -145,7 +144,9 @@ function App() {
       </Routes>    
       <Footer />
     </BrowserRouter>
-    </div> 
+</div>
+ 
+   
     {
   
   done ? 
