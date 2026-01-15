@@ -7,72 +7,76 @@ import png6 from '../assets/6.png'
 import png7 from '../assets/7.png'
 import png8 from '../assets/8.png'
 
-
 const activities = [
-    {
-      image: png1,
-      title: 'Got Interest About Coding',
-      date: '2018 - 2019',
-      desc: 'This period sparked my curiosity in coding. I began exploring programming basics and solving beginner-level problems on platforms like HackerRank and CodeChef.',
-      side: 'left',
-      imgClass:'imgsz'
-    },
-    {
-      image: png2,
-      title: 'Improve My Skills in Business',
-      date: '2018 - 2019',
-      desc: 'Simultaneously, I explored business models and entrepreneurship, focusing on how technology and business strategy intersect in real-world startups.',
-      side: 'right',
-      
-    },
-    {
-      image: png3,
-      title: 'Learned Python',
-      date: '2021 - 2022',
-      desc: 'I learned Python for automation and data manipulation. I practiced writing scripts, working with APIs, and solving LeetCode problems in Python.',
-      side: 'left',
-      imgClass:'imgsz'
-    },
-    {
-      image: png4,
-      title: 'Started MERN Stack Course',
-      date: '2022 - 2023',
-      desc: 'I enrolled in a MERN stack course to build full-stack applications using MongoDB, Express.js, React.js, and Node.js, which greatly enhanced my web development skills.',
-      side: 'right',
-      
-    },
-    {
-      image: png5,
-      title: 'Acted as Secretary in CSE Department for 1 Year',
-      date: '2022 - 2023',
-      desc: 'I served as Secretary in the CSE Department, organizing technical events and managing student coordination, which boosted my leadership and communication abilities.',
-      side: 'left',
-      imgClass:'imgsz'
-    },
-    {
-      image: png6,
-      title: 'Internship at Parts2Products (Thirunelveli)',
-      date: '2022 - 2023',
-      desc: 'I completed a hands-on internship where I worked on live projects, collaborated with engineers, and applied my technical knowledge in a real-world industrial setting.',
-      side: 'right',
-    },
-    {
-      image: png7,
-      title: 'Developed Projects Independently',
-      date: '2022 - 2024',
-      desc: 'I began building complete web apps on my own without tutorials, sharpening my debugging skills and reinforcing concepts like authentication, state management, and deployment.',
-      side: 'left',
-      imgClass:'imgsz'
-    },
-    {
-      image: png8,
-      title: 'Started own academy and planning for MBA',
-      date: '2025 - present',
-      desc: 'I have initiated my own academy to impart coding knowledge and am preparing to pursue an MBA to further enhance my business acumen alongside my technical skills, you can visit website here.',
-      link: 'https://www.bravedude.com/',  
-      side: 'right',
-    },
-  ]
-  export default activities; 
-  
-  
+  {
+    image: png1,
+    title: 'Introduction to Programming',
+    date: '2018 – 2019',
+    desc: 'Discovered interest in coding and logical problem solving through beginner challenges and practice.',
+    tech: ['Logic, ', 'Problem Solving.'],
+    side: 'left',
+    imgClass: 'imgsz'
+  },
+  {
+    image: png2,
+    title: 'Business & Entrepreneurship Exposure',
+    date: '2018 – 2019',
+    desc: 'Explored startup models and learned how technology supports scalable business ideas.',
+    tech: ['Business, ', 'Strategy.'],
+    side: 'right'
+  },
+  {
+    image: png3,
+    title: 'Python Programming',
+    date: '2021 – 2022',
+    desc: 'Learned Python for scripting, automation, and algorithmic problem solving.',
+    tech: ['Python, ', 'APIs, ', 'Automation.'],
+    side: 'left',
+    imgClass: 'imgsz'
+  },
+  {
+    image: png4,
+    title: 'MERN Stack Learning',
+    date: '2022 – 2023',
+    desc: 'Started full-stack development using React, Node, Express, and databases.',
+    tech: ['React, ', 'Node, ', 'Express, ', 'MongoDB.'],
+    side: 'right'
+  },
+  {
+    image: png5,
+    title: 'Secretary – CSE Department',
+    date: '2022 – 2023',
+    desc: 'Led technical events and student coordination, building leadership and communication skills.',
+    tech: ['Leadership, ', 'Management.'],
+    side: 'left',
+    imgClass: 'imgsz'
+  },
+  {
+    image: png6,
+    title: 'Full Stack Intern – Parts2Products',
+    date: 'Mar 2024',
+    desc: 'Worked on live applications, building UI screens and backend APIs with validations.',
+    tech: ['React, ', 'Node, ', 'Express.'],
+    side: 'right'
+  },
+  {
+    image: png7,
+    title: 'Independent Full Stack Projects',
+    date: '2022 – 2024',
+    desc: 'Built complete web apps independently with authentication, dashboards, and deployments.',
+    tech: ['MERN, ', 'JWT, ', 'PostgreSQL, ', 'CI/CD.'],
+    side: 'left',
+    imgClass: 'imgsz'
+  },
+  {
+    image: png8,
+    title: 'BraveDude Academy & MBA Prep',
+    date: '2025 – Present',
+    desc: 'Founded a training academy and preparing for MBA to strengthen business leadership.',
+    tech: ['EdTech, ', 'Entrepreneurship.'],
+    link: 'https://www.bravedude.com/',
+    side: 'right'
+  }
+]
+
+export default activities;

@@ -33,7 +33,7 @@ text={["Surya", "Coder", "FS developer", "Educator", "Business accumen", "Founde
   </span>
 </h2>
               <p>
-                I'm a<span>Java & PERN stack</span> developer specializing in <span>PostgreSQL</span>,<span>Express.js</span>,<span>React</span>,                and<span>Node.js</span>.I create scalable, high-performance web apps with a focus on clean code.
+                I'm a <span> Java & PERN stack</span> developer specializing in <span>PostgreSQL</span>,<span>Express.js</span>,<span>React</span>, and<span> Node.js.</span> I create scalable, high-performance web apps with a focus on clean code.
                 Passionate about tackling challenges and staying updated with the latest technologies.
                 My knowledge in full stack.
               </p>

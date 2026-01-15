@@ -3,7 +3,7 @@ import certificate1 from '../../assets/certificate/certificate'
 import './Certifications.css'   
 function Certifications() {
   return (
-  <> 
+  <div className='certification-whole-contain'> 
   <h1 className='certificate-hr'>Certificates<hr/></h1> 
     <div className='certificate-container'>
          
@@ -18,7 +18,7 @@ function Certifications() {
         })
       }
     </div>
-  </>
+  </div>
  
   )
 }

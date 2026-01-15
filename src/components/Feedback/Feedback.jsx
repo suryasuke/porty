@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../Feedback/Feedback.css';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import FaceIcon from '@mui/icons-material/Face';
 import Face3Icon from '@mui/icons-material/Face3';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 function Feedback(props) {
   const [win, setWin] = useState(false);
@@ -208,10 +208,9 @@ function Feedback(props) {
         {win && (
           <div className='scroll-effect'>
             <div className='scroll-to-top-wrapper'>
-              <div className='rotating-border'></div>
-              <button onClick={scrollToTop} className='scroll-to-top-btn'>
-                <span className='Span-icon'><KeyboardArrowUpIcon /></span>
-              </button>
+              
+                <ArrowCircleUpIcon  className='scroll-to-top-btn' onClick={scrollToTop} style={{ fontSize: '50px', color: 'rgb(233, 95, 53)' }} />
+            
             </div>
           </div>
         )}

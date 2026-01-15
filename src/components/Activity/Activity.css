@@ -72,9 +72,9 @@ animation-delay: 4s;
     margin: 100px auto;
 }
 .text-box{
-    padding: 5px 20px 37px 20px;
+    padding: 5px 20px 10px 20px;
     padding-top: 0px;
-    padding-bottom: 42px;
+    
     background-color: transparent;
     border-radius: 10px;
     font-size: 12px;
@@ -102,7 +102,6 @@ animation-delay: 4s;
 .tb{
     display: flex;
     flex-direction: column;
-    gap: 13px;
 }
 .tb h1{
     font-size: 23px;
@@ -326,7 +325,7 @@ animation-delay: 4s;
       min-height: 160px;
       width: 80%;
        max-height: auto;
-        border-radius: 5px;
+        
         border: 1px solid  rgb(159, 0, 154);
         padding-bottom: 5px;
         box-shadow: 0 0 4px rgb(154, 2, 154);

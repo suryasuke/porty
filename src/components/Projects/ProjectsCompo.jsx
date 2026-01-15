@@ -17,6 +17,7 @@ function ProjectsCompo() {
   });
 
   useEffect(() => {
+    window.scrollTo(0, 0); 
     localStorage.setItem('selectedId', JSON.stringify(selectedId));
     localStorage.setItem('valid', JSON.stringify(valid));
   }, [selectedId, valid]);

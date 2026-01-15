@@ -24,6 +24,7 @@ function Activity() {
               <div className='tb'>
                 <h1>{value.title}</h1>
                  <small><i style={{fontSize :'13px'}}>{value.date}</i></small>
+                 <p>Skill gained: {value.tech}</p>
                  <p>{value.desc}</p>
                   {
                     value.link ? <a href={value.link} className='webs-link' target='_blank' rel="noreferrer" >{value.link}</a> : null   

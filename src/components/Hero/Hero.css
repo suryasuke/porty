@@ -27,6 +27,7 @@
  .hero-title {
     font-size: 32px;
     font-weight: 600;
+    width: auto;
 }
 
 .name-wrapper {
@@ -74,6 +75,7 @@
     margin-top: 10px;
     padding: 30px;
   }
+ 
   
   .names h2 {
     font-size: 37px;

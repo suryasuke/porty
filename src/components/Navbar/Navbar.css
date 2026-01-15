@@ -215,23 +215,22 @@ border: none;
   }
 
   .nav-menu {
- display: none;
+         display: none;
         flex-direction: column;
         gap: 18px;
         position: absolute;
-        top: 63px;
-        right: 13px;
+        top: 59px;
+        right: 11px;
         width: 85%;
         background-color: white;
-        /* border-radius: 10px; */
         padding: 20px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         z-index: 2;
         transition: all 0.3s ease;
         animation: come 300ms ease-in-out;
         z-index: -2;
-        left: 10px;
-  }
+        left: 5.5px;
+    }
  
 
 
