@@ -17,7 +17,7 @@ export const Footer = () => {
                 <li>About</li>
                 <li>Contact</li>
                 <li> <a style={{ textDecoration :'none' , color : 'rgb(233, 95, 53)'}} href='https://maps.app.goo.gl/4rXhBgWKfTg8eprZ7'>Location</a></li>
-                <li><a style={{ textDecoration : 'none', color: 'rgb(233, 95, 53)'}} href="mailto:suryaffa648@gmail.com">Mail</a></li>
+                <li><a style={{ textDecoration : 'none', color: 'rgb(233, 95, 53)'}} href="https://mailto:suryaffa648@gmail.com">Mail</a></li>
             </ul>
             <div className='footer-social-icon'>
                  <div className='footer-icons-container'>
